@@ -6,22 +6,13 @@
 
 <a href="https://www.linkedin.com/in/jonathan-ribeiro-da-silva"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=00D4FF"/></a> <a href="https://tryhackme.com/p/J4yz0n"><img alt="TryHackMe" src="https://img.shields.io/badge/TryHackMe-000000?style=for-the-badge&logo=tryhackme&logoColor=39FF5E"/></a> <a href="mailto:jonathanribeirodasilva@outlook.com.br"><img alt="E-mail" src="https://img.shields.io/badge/E--mail-000000?style=for-the-badge&logo=maildotru&logoColor=FF2EC4"/></a>
 
+<br>
+
+<img alt="Estatísticas do GitHub" height="170" src="https://github-stats-extended.vercel.app/api?username=JonathanRibeiroSilva&show_icons=true&hide=stars&include_all_commits=true&hide_border=true&bg_color=000000&title_color=39FF5E&text_color=E6E8EC&icon_color=00D4FF"/> <img alt="Linguagens mais usadas" height="170" src="https://github-stats-extended.vercel.app/api/top-langs?username=JonathanRibeiroSilva&layout=compact&hide_border=true&bg_color=000000&title_color=39FF5E&text_color=E6E8EC"/>
+
+<img alt="Sequência de contribuições" src="https://streak-stats.demolab.com?user=JonathanRibeiroSilva&locale=pt_BR&background=000000&border=1F2328&stroke=1F2328&ring=39FF5E&fire=FF2EC4&currStreakNum=E6E8EC&sideNums=E6E8EC&currStreakLabel=39FF5E&sideLabels=6E7581&dates=6E7581"/>
+
 </div>
-
----
-
-> **Meu objetivo é atuar como Pentester.** Anos construindo aplicações me deram o mapa por dentro:
-> sei onde a autenticação cede, onde o gateway confia demais e por que a correção proposta
-> funciona no código real.
-
-<details>
-<summary>🇬🇧 <b>English</b></summary>
-
-> **My goal is to work as a Pentester.** Years of building applications gave me the map from the
-> inside: I know where authentication gives, where the gateway trusts too much, and why a proposed
-> fix actually holds in real code.
-
-</details>
 
 ---
 
@@ -252,38 +243,7 @@ PS C:\Users\jonathan\Certificados> Get-Certification | Format-Table -AutoSize
 
 ---
 
-## `06` / Atividade · Activity
-
 <div align="center">
-
-<img alt="Estatísticas do GitHub" height="170" src="https://github-stats-extended.vercel.app/api?username=JonathanRibeiroSilva&show_icons=true&hide=stars&include_all_commits=true&hide_border=true&bg_color=000000&title_color=39FF5E&text_color=E6E8EC&icon_color=00D4FF"/> <img alt="Linguagens mais usadas" height="170" src="https://github-stats-extended.vercel.app/api/top-langs?username=JonathanRibeiroSilva&layout=compact&hide_border=true&bg_color=000000&title_color=39FF5E&text_color=E6E8EC"/>
-
-<img alt="Sequência de contribuições" src="https://streak-stats.demolab.com?user=JonathanRibeiroSilva&locale=pt_BR&background=000000&border=1F2328&stroke=1F2328&ring=39FF5E&fire=FF2EC4&currStreakNum=E6E8EC&sideNums=E6E8EC&currStreakLabel=39FF5E&sideLabels=6E7581&dates=6E7581"/>
-
-</div>
-
----
-
-## `07` / Contato · Contact
-
-Aberto a vagas de Pentester, AppSec e desenvolvimento com foco em segurança.
-
-<details>
-<summary>🇬🇧 <b>English</b></summary>
-
-Open to Pentester, AppSec and security-focused development roles.
-
-</details>
-
-<div align="center">
-
-<a href="mailto:jonathanribeirodasilva@outlook.com.br"><img alt="E-mail" src="https://img.shields.io/badge/E--mail-000000?style=for-the-badge&logo=maildotru&logoColor=FF2EC4"/></a> <a href="https://www.linkedin.com/in/jonathan-ribeiro-da-silva"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=00D4FF"/></a> <a href="https://tryhackme.com/p/J4yz0n"><img alt="TryHackMe" src="https://img.shields.io/badge/TryHackMe-000000?style=for-the-badge&logo=tryhackme&logoColor=39FF5E"/></a>
-
-<br>
-
-<sub><code>fuso GMT-3 · Brasil</code> &nbsp; <code>resposta em até 24h</code> &nbsp; <code>remoto ou híbrido</code></sub>
-
-<br><br>
 
 <sub>Feito com atenção a detalhes e à superfície de ataque.</sub>
 
