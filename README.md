@@ -192,6 +192,12 @@ regression test.
 
 <a href="https://github.com/JonathanRibeiroSilva/Cyph3r-X/releases/latest/download/Cyph3r-X.exe"><img alt="Baixar .exe Windows" src="https://img.shields.io/badge/Baixar_.exe_%C2%B7_Windows-000000?style=for-the-badge&logo=windows&logoColor=00D4FF"/></a> <a href="https://github.com/JonathanRibeiroSilva/Cyph3r-X"><img alt="Código-fonte" src="https://img.shields.io/badge/C%C3%B3digo--fonte-000000?style=for-the-badge&logo=github&logoColor=39FF5E"/></a>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/runas-dark.png"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/runas-light.png"/>
+  <img height="88" alt="Runas" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/runas-light.png"/>
+</picture>
+
 ### [RunasERP](https://github.com/DenebCorp/RunasERP) — ERP em microsserviços
 
 `8+ microsserviços` &nbsp; `100% dockerizado` &nbsp; `1 gateway central` &nbsp; `APIs REST versionadas`
