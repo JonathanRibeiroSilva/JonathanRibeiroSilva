@@ -243,8 +243,3 @@ PS C:\Users\jonathan\Certificados> Get-Certification | Format-Table -AutoSize
 
 ---
 
-<div align="center">
-
-<sub>Feito com atenção a detalhes e à superfície de ataque.</sub>
-
-</div>
