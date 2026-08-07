@@ -237,10 +237,9 @@ authorization in every service — reviewed with the same checklist I use on a p
 
 ## `05` / Certificados · Certificates
 
-<details>
-<summary><code>Get-Certification | Format-Table -AutoSize</code></summary>
-
-<br>
+```console
+PS C:\Users\jonathan\Certificados> Get-Certification | Format-Table -AutoSize
+```
 
 | Emissor | Trilha | Ano | Status |
 |:--|:--|:--|:--|
@@ -251,11 +250,9 @@ authorization in every service — reviewed with the same checklist I use on a p
 | Prof. Pietro M. Oliveira | Lógica de Programação em Linguagem C | 2023 | concluído |
 | Fundação Bradesco | Fundamentos de Lógica de Programação | 2023 | concluído |
 
-</details>
-
 ---
 
-## `06` / Contato · Contact
+## `06` / Atividade · Activity
 
 <div align="center">
 
@@ -263,7 +260,22 @@ authorization in every service — reviewed with the same checklist I use on a p
 
 <img alt="Sequência de contribuições" src="https://streak-stats.demolab.com?user=JonathanRibeiroSilva&locale=pt_BR&background=000000&border=1F2328&stroke=1F2328&ring=39FF5E&fire=FF2EC4&currStreakNum=E6E8EC&sideNums=E6E8EC&currStreakLabel=39FF5E&sideLabels=6E7581&dates=6E7581"/>
 
-<br><br>
+</div>
+
+---
+
+## `07` / Contato · Contact
+
+Aberto a vagas de Pentester, AppSec e desenvolvimento com foco em segurança.
+
+<details>
+<summary>🇬🇧 <b>English</b></summary>
+
+Open to Pentester, AppSec and security-focused development roles.
+
+</details>
+
+<div align="center">
 
 <a href="mailto:jonathanribeirodasilva@outlook.com.br"><img alt="E-mail" src="https://img.shields.io/badge/E--mail-000000?style=for-the-badge&logo=maildotru&logoColor=FF2EC4"/></a> <a href="https://www.linkedin.com/in/jonathan-ribeiro-da-silva"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=00D4FF"/></a> <a href="https://tryhackme.com/p/J4yz0n"><img alt="TryHackMe" src="https://img.shields.io/badge/TryHackMe-000000?style=for-the-badge&logo=tryhackme&logoColor=39FF5E"/></a>
 
