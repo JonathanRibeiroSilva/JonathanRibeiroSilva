@@ -238,6 +238,3 @@ authorization in every service — reviewed with the same checklist I use on a p
 | Fundação Bradesco | Ética no Desenvolvimento de Sistemas | 2023 | concluído |
 | Prof. Pietro M. Oliveira | Lógica de Programação em Linguagem C | 2023 | concluído |
 | Fundação Bradesco | Fundamentos de Lógica de Programação | 2023 | concluído |
-
----
-
