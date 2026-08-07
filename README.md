@@ -154,7 +154,9 @@ production — and I can explain what I did with it.
 
 ## `04` / Projetos · Projects
 
-### <img src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/cyph3r-x.png" height="26" align="top" alt=""/> [Cyph3r X](https://github.com/JonathanRibeiroSilva/Cyph3r-X) — cofre de senhas desktop, open source
+<img src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/cyph3r-x.png" height="88" alt="Cyph3r X"/>
+
+### [Cyph3r X](https://github.com/JonathanRibeiroSilva/Cyph3r-X) — cofre de senhas desktop, open source
 
 `0 segredos legíveis no banco local` &nbsp; `600k iterações PBKDF2` &nbsp; `Fernet` &nbsp; `MIT`
 
@@ -227,10 +229,6 @@ authorization in every service — reviewed with the same checklist I use on a p
 ---
 
 ## `05` / Certificados · Certificates
-
-```console
-PS C:\Users\jonathan\Certificados> Get-Certification | Format-Table -AutoSize
-```
 
 | Emissor | Trilha | Ano | Status |
 |:--|:--|:--|:--|
