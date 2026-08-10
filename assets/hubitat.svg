@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1240" width="1240" height="1240" role="img" aria-label="Hubitat">
+  <title>Hubitat</title>
+  <defs>
+    <linearGradient id="h" gradientUnits="userSpaceOnUse" x1="740" y1="250" x2="450" y2="950">
+      <stop offset="0" stop-color="#7A33EA"/>
+      <stop offset=".5" stop-color="#5052EF"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#h)" stroke="url(#h)" stroke-width="34" stroke-linejoin="round">
+    <path d="M433 389 L433 794 L358 739 L358 462 Z"/>
+    <path d="M807 389 L807 794 L882 739 L882 462 Z"/>
+    <path d="M620 275 L722 335 L722 455 L620 515 L518 455 L518 335 Z"/>
+    <path d="M518 625 L620 685 L722 625 L722 838 L620 906 L518 838 Z"/>
+  </g>
+</svg>

@@ -44,48 +44,7 @@ and each side sharpens the other. I learn in my own lab, not just from videos.
 
 ---
 
-## `02` / Metodologia · Methodology
-
-Seis etapas, sempre na mesma ordem.
-
-```console
-┌──(jonathan㉿kali)-[~]
-└─$ recon --target alvo.com --passive
-[01] entender tudo que o alvo expõe antes de tocar em qualquer serviço
-
-┌──(jonathan㉿kali)-[~]
-└─$ nmap -sV -p- legacy.alvo.com && ffuf -w wordlist.txt
-[02] transformar a superfície em lista concreta de serviços, rotas e papéis
-
-┌──(jonathan㉿kali)-[~]
-└─$ review --owasp-top10 --scope api/v1
-[03] cruzar comportamento observado com falhas conhecidas e lógica de negócio
-
-┌──(jonathan㉿kali)-[~]
-└─$ poc idor --from 1042 --to 1043 --scope-check
-[04] provar o impacto com o menor ruído possível, dentro do escopo acordado
-
-┌──(jonathan㉿kali)-[~]
-└─$ diff --patch authz-invoices
-[05] propor a correção que sustenta no código e na arquitetura — não só no WAF
-
-┌──(jonathan㉿kali)-[~]
-└─$ report build --severity high --evidence ./poc
-[06] relatório que qualquer dev reproduz, prioriza e corrige sem me chamar
-```
-
-| # | Etapa · Stage | Ferramental |
-|:--|:--|:--|
-| `01` | Reconhecimento · Recon | OSINT · crt.sh · amass · whois |
-| `02` | Enumeração · Enumeration | Nmap · ffuf · Burp Suite |
-| `03` | Identificação · Identification | OWASP Top 10 · Burp Repeater · leitura de código |
-| `04` | Exploração · Exploitation | Burp Suite · curl · script próprio |
-| `05` | Mitigação · Mitigation | defesa em profundidade · code review · hardening |
-| `06` | Documentação · Documentation | CVSS · markdown · evidência versionada |
-
----
-
-## `03` / Ferramentas · Tools
+## `02` / Ferramentas · Tools
 
 Nada de barra de progresso. Cada item aqui apareceu em um laboratório, em um writeup ou em um
 sistema que eu coloquei em produção.
@@ -152,7 +111,61 @@ production — and I can explain what I did with it.
 
 ---
 
-## `04` / Projetos · Projects
+## `03` / Projetos · Projects
+
+<img src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/hubitat.svg" height="88" alt="Hubitat"/>
+
+### [Hubitat](https://github.com/JonathanRibeiroSilva/Hubitat) — plataforma de colaboração 3D self-hosted
+
+`7 containers · 1 docker compose up` &nbsp; `voz espacial` &nbsp; `0 telemetria` &nbsp; `MIT`
+
+Videochamada coloca todo mundo num retângulo e dá a palavra a uma pessoa por vez. Hubitat troca isso
+por um **lugar**: uma sala 3D onde o time anda, ouve quem está por perto, chega numa conversa e sai
+dela — como num escritório físico. Voz e vídeo com queda por distância e panorâmica direcional, zonas
+autorais (privada, holofote, portal), editor de mapa embutido e objetos colaborativos que sobrevivem
+ao fim da reunião.
+
+Roda inteiro no **seu hardware**. Não existe plano hospedado, conta no servidor de terceiro nem
+telemetria.
+
+> [!IMPORTANT]
+> **A decisão de segurança que define o projeto** — o movimento é autoritativo no cliente, então um
+> cliente adulterado atravessa parede. O que ele **não** consegue é escapar do servidor: interesse,
+> ocupação de zona e resolução de audiência são calculados no servidor a partir da posição reportada.
+> Mentir sobre onde se está não coloca ninguém dentro de uma conversa privada.
+> Chat e áudio chamam o **mesmo** `resolveAudience()` — não há verificação de distância no código de
+> chat, então as duas superfícies não podem divergir. Papéis vivem numa matriz de capacidade única,
+> lida pelo guard HTTP, pelo dispatcher WebSocket e pelo cliente que desenha os botões.
+
+<details>
+<summary>🇬🇧 <b>English</b></summary>
+
+Video calls put everyone in one rectangle and give the floor to one person at a time. Hubitat
+replaces that with a **place**: a 3D room your team walks around in, where you hear the people near
+you, drift over to a conversation and step away from it. Spatial voice and video with distance
+falloff and directional audio, authored zones, a built-in map editor, and collaborative objects that
+outlive the meeting. Everything runs on **your own hardware** — no hosted plan, no account on
+somebody else's server, no telemetry.
+
+**The security decision that defines the project** — movement is client-authoritative, so a tampered
+client can walk through walls. What it cannot do is escape server-side decisions: interest, zone
+occupancy and audience resolution are all computed on the server from the reported position. Chat and
+audio call the same `resolveAudience()`, so the two surfaces cannot drift apart, and roles live in one
+capability matrix read by the HTTP guard, the WebSocket dispatcher and the client.
+
+</details>
+
+<p>
+  <img height="34" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>&nbsp;
+  <img height="34" alt="React" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>&nbsp;
+  <img height="34" alt="Three.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg"/>&nbsp;
+  <img height="34" alt="NestJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"/>&nbsp;
+  <img height="34" alt="PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"/>&nbsp;
+  <img height="34" alt="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"/>&nbsp;
+  <code>LiveKit</code> <code>WebRTC</code> <code>Yjs CRDT</code> <code>Rapier</code> <code>pg-boss</code> <code>MinIO</code> <code>Argon2</code>
+</p>
+
+<a href="https://github.com/JonathanRibeiroSilva/Hubitat"><img alt="Código-fonte" src="https://img.shields.io/badge/C%C3%B3digo--fonte-000000?style=for-the-badge&logo=github&logoColor=39FF5E"/></a> <a href="https://github.com/JonathanRibeiroSilva/Hubitat/blob/main/docs/architecture.md"><img alt="Arquitetura" src="https://img.shields.io/badge/Arquitetura_%2B_ADRs-000000?style=for-the-badge&logo=readthedocs&logoColor=00D4FF"/></a> <a href="https://github.com/JonathanRibeiroSilva/Hubitat#self-hosting"><img alt="Self-hosted" src="https://img.shields.io/badge/docker_compose_up-000000?style=for-the-badge&logo=docker&logoColor=FF2EC4"/></a>
 
 <img src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/cyph3r-x.png" height="88" alt="Cyph3r X"/>
 
@@ -234,7 +247,7 @@ authorization in every service — reviewed with the same checklist I use on a p
 
 ---
 
-## `05` / Certificados · Certificates
+## `04` / Certificados · Certificates
 
 | Emissor | Trilha | Ano | Status |
 |:--|:--|:--|:--|
