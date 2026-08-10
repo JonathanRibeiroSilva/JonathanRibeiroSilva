@@ -113,7 +113,7 @@ production — and I can explain what I did with it.
 
 ## `03` / Projetos · Projects
 
-<img src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/hubitat.svg" height="88" alt="Hubitat"/>
+<img src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/hubitat.svg" height="120" alt="Hubitat"/>
 
 ### [Hubitat](https://github.com/JonathanRibeiroSilva/Hubitat) — plataforma de colaboração 3D self-hosted
 
