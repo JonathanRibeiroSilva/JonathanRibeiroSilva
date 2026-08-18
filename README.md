@@ -8,7 +8,7 @@
 
 <br>
 
-<img width="509" alt="Terminal: 518 commits em 2026 distribuídos por 7 repositórios, incluindo privados" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/stats-terminal.svg"/>
+<img width="509" alt="Terminal listando commits de 2026 por repositório, incluindo os privados" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/stats-terminal.svg"/>
 
 </div>
 
