@@ -15,6 +15,7 @@ instalada na maquina de quem le o README.
 """
 
 import io
+import math
 import os
 
 # ---------------------------------------------------------------- dados
@@ -67,6 +68,7 @@ COLS = 62                # largura util em caracteres
 W    = PADX * 2 + COLS * CH
 
 NAME_COL, DOTS_END_COL, YEAR_COL, OK_COL = 8, 54, 55, 60
+ROOT_ROW = 3             # linha do "." -- topo da saida do tree
 
 FONT = ("ui-monospace, SFMono-Regular, Menlo, Consolas, "
         "&quot;DejaVu Sans Mono&quot;, &quot;Liberation Mono&quot;, monospace")
@@ -139,8 +141,8 @@ def prompt(row, trailing=False):
     o.append(text(7 + len(USER) + len(HOST) + len(CWD), row, "]", T["dim"]))
     o.append(text(2, row + 1, "$", T["accent"], 600))
     if trailing:
-        o.append('<rect x="%.2f" y="%.2f" width="%.2f" height="%.2f" fill="%s" '
-                 'opacity=".85"/>'
+        o.append('<rect class="blink" x="%.2f" y="%.2f" width="%.2f" height="%.2f" '
+                 'fill="%s"/>'
                  % (cx(4), cy(row + 1) - FS * 0.82, CH * 0.85, FS * 0.98, T["fg"]))
     else:
         o.append(text(4, row + 1, COMMAND, T["fg"], 500))
@@ -148,12 +150,83 @@ def prompt(row, trailing=False):
     return o
 
 
+# ---------------------------------------------------------------- animacao
+#
+# Duas "cortinas" da cor do fundo cobrem o conteudo e saem de cena em
+# passos discretos -- e o que produz a digitacao e a saida linha a linha.
+# CSS, nao SMIL: o GitHub renderiza o SVG dentro de <img>, onde CSS anima
+# normalmente e ainda respeita prefers-reduced-motion.
+#
+# O transform base de cada cortina ja e a posicao final revelada. Se o
+# renderizador ignorar a animacao, o conteudo aparece inteiro em vez de
+# ficar escondido atras de um retangulo preto.
+
+CYCLE = 11.0             # segundos por volta
+T_TYPE = (4, 20)         # % do ciclo: inicio e fim da digitacao
+T_OUT = (25, 40)         # % do ciclo: inicio e fim da saida
+
+
+def anim_metrics(h):
+    cmd_len = len(COMMAND) + 1 + len(ARGS)
+    out_top = cy(ROOT_ROW) - 15
+    out_steps = int(math.ceil((h - out_top) / LH))
+    return {
+        "cmd_len":   cmd_len,
+        "cmd_x":     cx(4),
+        "cmd_travel": cmd_len * CH,
+        "cmd_y":     cy(1) - 11,
+        "out_top":   out_top,
+        "out_steps": out_steps,
+        "out_travel": out_steps * LH,
+    }
+
+
+def style(h):
+    m = anim_metrics(h)
+    return (
+        '<style>\n'
+        '.t-cmd{transform:translateX(%.2fpx);animation:cmd %gs steps(%d) infinite}\n'
+        '.t-out{transform:translateY(%.2fpx);animation:out %gs steps(%d) infinite}\n'
+        '.caret{opacity:.9;animation:caret %gs steps(1) infinite}\n'
+        '.blink{opacity:.85;animation:blink 1.05s steps(1) infinite}\n'
+        '@keyframes cmd{0%%,%d%%{transform:translateX(0)}'
+        '%d%%,100%%{transform:translateX(%.2fpx)}}\n'
+        '@keyframes out{0%%,%d%%{transform:translateY(0)}'
+        '%d%%,100%%{transform:translateY(%.2fpx)}}\n'
+        '@keyframes caret{0%%,%d%%{opacity:.9}%d%%,100%%{opacity:0}}\n'
+        '@keyframes blink{0%%,49%%{opacity:.85}50%%,100%%{opacity:0}}\n'
+        '@media (prefers-reduced-motion:reduce){'
+        '.t-cmd,.t-out,.blink{animation:none}.caret{animation:none;opacity:0}}\n'
+        '</style>'
+        % (m["cmd_travel"], CYCLE, m["cmd_len"],
+           m["out_travel"], CYCLE, m["out_steps"],
+           CYCLE,
+           T_TYPE[0], T_TYPE[1], m["cmd_travel"],
+           T_OUT[0], T_OUT[1], m["out_travel"],
+           T_TYPE[1], T_TYPE[1] + 1)
+    )
+
+
+def curtains(h):
+    m = anim_metrics(h)
+    return (
+        '<g class="t-out"><rect x="1" y="%.2f" width="%.2f" height="%.2f" fill="%s"/></g>\n'
+        '<g class="t-cmd">'
+        '<rect x="%.2f" y="%.2f" width="%.2f" height="15" fill="%s"/>'
+        '<rect class="caret" x="%.2f" y="%.2f" width="%.2f" height="%.2f" fill="%s"/>'
+        '</g>'
+        % (m["out_top"], W - 2, h - m["out_top"], T["bg"],
+           m["cmd_x"], m["cmd_y"], W - m["cmd_x"], T["bg"],
+           m["cmd_x"], cy(1) - FS * 0.82, CH * 0.85, FS * 0.98, T["fg"])
+    )
+
+
 def build():
     o = []
     o += prompt(0)
 
     # ---- arvore ----------------------------------------------------
-    root = 3
+    root = ROOT_ROW
     rows, r = [], root + 1          # rows[i] = linha de cada emissor
     for _, items in CERTS:
         rows.append((r, [r + 1 + k for k in range(len(items))]))
@@ -193,26 +266,32 @@ def build():
     h = cy(prow + 1) + 22
 
     # ---- moldura da janela -----------------------------------------
+    # O fundo e a titlebar sao pintados antes do conteudo; a borda vem por
+    # ultimo, por cima das cortinas, para nao ser encoberta durante a animacao.
     title = "j4yz0n@%s: %s" % (HOST, CWD)
-    chrome = [
-        '<rect x=".5" y=".5" width="%.2f" height="%.2f" rx="9" fill="%s" stroke="%s"/>'
-        % (W - 1, h - 1, T["bg"], T["edge"]),
+    back = [
+        '<rect x="0" y="0" width="%.2f" height="%.2f" rx="9" fill="%s"/>'
+        % (W, h, T["bg"]),
         '<path d="M.5 9.5A9 9 0 0 1 9.5.5H%.2fA9 9 0 0 1 %.2f 9.5V%.1fH.5Z" fill="%s"/>'
         % (W - 9.5, W - 0.5, BAR, T["chrome"]),
         '<path d="M0 %.1fH%.2f" stroke="%s" stroke-width="1"/>' % (BAR, W, T["edge"]),
     ]
     for i, c in enumerate(T["dots"]):
-        chrome.append('<circle cx="%d" cy="%.1f" r="4.5" fill="%s"/>'
-                      % (18 + i * 15, BAR / 2, c))
-    chrome.append('<text x="%.2f" y="%.1f" fill="%s" text-anchor="middle" '
-                  'font-size="11">%s</text>' % (W / 2, BAR / 2 + 4, T["dim"], esc(title)))
+        back.append('<circle cx="%d" cy="%.1f" r="4.5" fill="%s"/>'
+                    % (18 + i * 15, BAR / 2, c))
+    back.append('<text x="%.2f" y="%.1f" fill="%s" text-anchor="middle" '
+                'font-size="11">%s</text>' % (W / 2, BAR / 2 + 4, T["dim"], esc(title)))
+
+    front = ['<rect x=".5" y=".5" width="%.2f" height="%.2f" rx="9" fill="none" '
+             'stroke="%s"/>' % (W - 1, h - 1, T["edge"])]
 
     alt = "Terminal listando %d certificados agrupados por emissor" % total
     return (
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %.2f %.2f" '
         'width="%.2f" height="%.2f" role="img" aria-label="%s" '
-        'font-family="%s" font-size="%s">\n%s\n%s\n</svg>\n'
-        % (W, h, W, h, alt, FONT, FS, "\n".join(chrome), "\n".join(o))
+        'font-family="%s" font-size="%s">\n%s\n%s\n%s\n%s\n%s\n</svg>\n'
+        % (W, h, W, h, alt, FONT, FS,
+           style(h), "\n".join(back), "\n".join(o), curtains(h), "\n".join(front))
     )
 
 

@@ -250,30 +250,3 @@ authorization in every service — reviewed with the same checklist I use on a p
 ## `04` / Certificados · Certificates
 
 <img width="509" alt="Terminal listando 6 certificados agrupados por emissor: Cisco Academy, Fundação Bradesco, Pietro M. Oliveira e SCRUMstudy" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/certs-terminal.svg"/>
-
-<details>
-<summary>📄 <b>Versão em texto · plain text</b></summary>
-
-```console
-┌──(jonathan㉿kali)-[~/certs]
-└─$ tree -L 2 --dirsfirst
-
-.
-├── cisco-academy/
-│   ├── gerenciamento-de-ameacas-ciberneticas ....... 2025  ✔
-│   └── introducao-a-ciberseguranca ................. 2025  ✔
-├── fundacao-bradesco/
-│   ├── etica-no-desenvolvimento-de-sistemas ........ 2023  ✔
-│   └── fundamentos-de-logica-de-programacao ........ 2023  ✔
-├── pietro-m-oliveira/
-│   └── logica-de-programacao-em-linguagem-c ........ 2023  ✔
-└── scrumstudy/
-    └── scrum-fundamentals-certified ................ 2024  ✔
-
-4 diretórios · 6 certificados · 6 concluídos
-
-┌──(jonathan㉿kali)-[~/certs]
-└─$ ▮
-```
-
-</details>
