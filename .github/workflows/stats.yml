@@ -1,0 +1,70 @@
+name: Atualiza o card de estatísticas
+
+# Regenera assets/stats-terminal.svg com os commits reais, incluindo os de
+# repositório privado.
+#
+# PRECISA DE UM SECRET. O GITHUB_TOKEN padrão só enxerga ESTE repositório,
+# então com ele o card mostraria o mesmo número errado que os cards de
+# terceiro mostravam. Para funcionar:
+#
+#   1. github.com/settings/tokens  ->  novo token (classic) com escopo `repo`
+#   2. Settings deste repo -> Secrets and variables -> Actions -> New secret
+#      Nome: STATS_TOKEN
+#
+# Sem o secret o job é pulado com aviso, em vez de sobrescrever o card com
+# dados incompletos.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"      # todo dia às 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verifica o secret
+        id: guard
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          if [ -z "$STATS_TOKEN" ]; then
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::STATS_TOKEN ausente — card não atualizado. Veja o cabeçalho deste workflow."
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.guard.outputs.ok == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.guard.outputs.ok == 'true'
+        with:
+          python-version: "3.12"
+
+      - name: Regenera o card
+        if: steps.guard.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: python scripts/gen_stats_svg.py
+
+      - name: Commita se mudou
+        if: steps.guard.outputs.ok == 'true'
+        run: |
+          if git diff --quiet -- assets/stats-terminal.svg; then
+            echo "sem mudança — nada a commitar"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats-terminal.svg
+          git commit -m "Atualiza o card de estatísticas"
+          git push

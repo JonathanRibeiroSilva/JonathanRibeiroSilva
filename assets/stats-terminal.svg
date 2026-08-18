@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509.00 374.00" width="509.00" height="374.00" role="img" aria-label="Terminal: 518 commits em 2026 distribuídos por 7 repositórios" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, &quot;Liberation Mono&quot;, monospace" font-size="12.5">
+<style>
+.t-cmd{transform:translateX(307.50px);animation:cmd 11s steps(41) infinite}
+.t-out{transform:translateY(273.00px);animation:out 11s steps(13) infinite}
+.caret{opacity:.9;animation:caret 11s steps(1) infinite}
+.blink{opacity:.85;animation:blink 1.05s steps(1) infinite}
+@keyframes cmd{0%,4%{transform:translateX(0)}20%,100%{transform:translateX(307.50px)}}
+@keyframes out{0%,25%{transform:translateY(0)}40%,100%{transform:translateY(273.00px)}}
+@keyframes caret{0%,20%{opacity:.9}21%,100%{opacity:0}}
+@keyframes blink{0%,49%{opacity:.85}50%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.t-cmd,.t-out,.blink{animation:none}.caret{animation:none;opacity:0}}
+</style>
+<rect x="0" y="0" width="509.00" height="374.00" rx="9" fill="#000000"/>
+<path d="M.5 9.5A9 9 0 0 1 9.5.5H499.50A9 9 0 0 1 508.50 9.5V34.0H.5Z" fill="#0A0C0E"/>
+<path d="M0 34.0H509.00" stroke="#1F2328" stroke-width="1"/>
+<circle cx="18" cy="17.0" r="4.5" fill="#FF2EC4"/>
+<circle cx="33" cy="17.0" r="4.5" fill="#00D4FF"/>
+<circle cx="48" cy="17.0" r="4.5" fill="#39FF5E"/>
+<text x="254.50" y="21.0" fill="#6E7581" text-anchor="middle" font-size="11">j4yz0n@kali: ~</text>
+<path d="M25.00 53.75L25.00 74.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M25.00 53.75L40.00 53.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M25.00 74.75L35.50 74.75" stroke="#6E7581" stroke-width="1"/>
+<text x="37.00" y="58.00" fill="#6E7581" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">(</text>
+<text x="44.50" y="58.00" fill="#39FF5E" font-weight="600" textLength="60.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">jonathan</text>
+<circle cx="108.25" cy="53.75" r="4.4" fill="none" stroke="#6E7581" stroke-width="1"/><text x="108.25" y="56.25" fill="#6E7581" font-size="7" text-anchor="middle" font-weight="600">K</text>
+<text x="112.00" y="58.00" fill="#39FF5E" font-weight="600" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">kali</text>
+<text x="142.00" y="58.00" fill="#6E7581" textLength="22.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">)-[</text>
+<text x="164.50" y="58.00" fill="#00D4FF" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">~</text>
+<text x="172.00" y="58.00" fill="#6E7581" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">]</text>
+<text x="37.00" y="79.00" fill="#39FF5E" font-weight="600" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">$</text>
+<text x="52.00" y="79.00" fill="#E6E8EC" font-weight="500" textLength="22.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">git</text>
+<text x="82.00" y="79.00" fill="#8B919C" textLength="277.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">shortlog -sn --all --since=2026-01-01</text>
+<text x="44.50" y="121.00" fill="#39FF5E" font-weight="600" textLength="22.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">481</text>
+<text x="89.50" y="121.00" fill="#E6E8EC" textLength="60.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">RunasERP</text>
+<path d="M155.50 116.75L367.00 116.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="382.00" y="121.00" fill="#FF2EC4" textLength="52.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">privado</text>
+<text x="52.00" y="142.00" fill="#39FF5E" font-weight="600" textLength="15.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">12</text>
+<text x="89.50" y="142.00" fill="#E6E8EC" textLength="150.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">JonathanRibeiroSilva</text>
+<path d="M245.50 137.75L367.00 137.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="382.00" y="142.00" fill="#6E7581" textLength="52.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">público</text>
+<text x="59.50" y="163.00" fill="#39FF5E" font-weight="600" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">5</text>
+<text x="89.50" y="163.00" fill="#E6E8EC" textLength="60.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Cyph3r-X</text>
+<path d="M155.50 158.75L367.00 158.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="382.00" y="163.00" fill="#6E7581" textLength="52.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">público</text>
+<text x="59.50" y="184.00" fill="#39FF5E" font-weight="600" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">5</text>
+<text x="89.50" y="184.00" fill="#E6E8EC" textLength="112.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">mikufan3939/AEP</text>
+<path d="M208.00 179.75L367.00 179.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="382.00" y="184.00" fill="#6E7581" textLength="52.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">público</text>
+<text x="59.50" y="205.00" fill="#39FF5E" font-weight="600" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">1</text>
+<text x="89.50" y="205.00" fill="#E6E8EC" textLength="52.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">Hubitat</text>
+<path d="M148.00 200.75L367.00 200.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="382.00" y="205.00" fill="#6E7581" textLength="52.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">público</text>
+<text x="52.00" y="226.00" fill="#39FF5E" font-weight="600" textLength="15.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">14</text>
+<text x="89.50" y="226.00" fill="#E6E8EC" textLength="45.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">outros</text>
+<path d="M140.50 221.75L367.00 221.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="382.00" y="226.00" fill="#6E7581" textLength="105.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2 repositórios</text>
+<text x="22.00" y="268.00" fill="#6E7581" textLength="352.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">518 commits · 32 pull requests · 7 repositórios</text>
+<text x="22.00" y="289.00" fill="#6E7581" textLength="180.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">atualizado em 2026-08-18</text>
+<path d="M25.00 326.75L25.00 347.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M25.00 326.75L40.00 326.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M25.00 347.75L35.50 347.75" stroke="#6E7581" stroke-width="1"/>
+<text x="37.00" y="331.00" fill="#6E7581" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">(</text>
+<text x="44.50" y="331.00" fill="#39FF5E" font-weight="600" textLength="60.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">jonathan</text>
+<circle cx="108.25" cy="326.75" r="4.4" fill="none" stroke="#6E7581" stroke-width="1"/><text x="108.25" y="329.25" fill="#6E7581" font-size="7" text-anchor="middle" font-weight="600">K</text>
+<text x="112.00" y="331.00" fill="#39FF5E" font-weight="600" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">kali</text>
+<text x="142.00" y="331.00" fill="#6E7581" textLength="22.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">)-[</text>
+<text x="164.50" y="331.00" fill="#00D4FF" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">~</text>
+<text x="172.00" y="331.00" fill="#6E7581" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">]</text>
+<text x="37.00" y="352.00" fill="#39FF5E" font-weight="600" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">$</text>
+<rect class="blink" x="52.00" y="341.75" width="6.38" height="12.25" fill="#E6E8EC"/>
+<g class="t-out"><rect x="1" y="106.00" width="507.00" height="268.00" fill="#000000"/></g>
+<g class="t-cmd"><rect x="52.00" y="68.00" width="457.00" height="15" fill="#000000"/><rect class="caret" x="52.00" y="68.75" width="6.38" height="12.25" fill="#E6E8EC"/></g>
+<rect x=".5" y=".5" width="508.00" height="373.00" rx="9" fill="none" stroke="#1F2328"/>
+</svg>

@@ -8,9 +8,7 @@
 
 <br>
 
-<img alt="Estatísticas do GitHub" height="170" src="https://github-stats-extended.vercel.app/api?username=JonathanRibeiroSilva&locale=pt-br&show_icons=true&hide=stars&include_all_commits=true&hide_border=true&bg_color=000000&title_color=39FF5E&text_color=E6E8EC&icon_color=00D4FF"/> <img alt="Linguagens mais usadas" height="170" src="https://github-stats-extended.vercel.app/api/top-langs?username=JonathanRibeiroSilva&locale=pt-br&layout=compact&hide_border=true&bg_color=000000&title_color=39FF5E&text_color=E6E8EC"/>
-
-<img alt="Sequência de contribuições" src="https://streak-stats.demolab.com?user=JonathanRibeiroSilva&locale=pt_BR&background=000000&border=1F2328&stroke=1F2328&ring=39FF5E&fire=FF2EC4&currStreakNum=E6E8EC&sideNums=E6E8EC&currStreakLabel=39FF5E&sideLabels=6E7581&dates=6E7581"/>
+<img width="509" alt="Terminal: 518 commits em 2026 distribuídos por 7 repositórios, incluindo privados" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/stats-terminal.svg"/>
 
 </div>
 
@@ -38,7 +36,7 @@ e uma prática alimenta a outra.
 <summary>🇬🇧 <b>English</b></summary>
 
 I'm passionate about cybersecurity. I build distributed systems by day and study attacks by night,
-and each side sharpens the other. I learn in my own lab, not just from videos.
+and each side sharpens the other.
 
 </details>
 
