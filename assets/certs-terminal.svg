@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509.00 458.00" width="509.00" height="458.00" role="img" aria-label="Terminal listando 6 certificados agrupados por emissor" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, &quot;Liberation Mono&quot;, monospace" font-size="12.5">
+<rect x=".5" y=".5" width="508.00" height="457.00" rx="9" fill="#000000" stroke="#1F2328"/>
+<path d="M.5 9.5A9 9 0 0 1 9.5.5H499.50A9 9 0 0 1 508.50 9.5V34.0H.5Z" fill="#0A0C0E"/>
+<path d="M0 34.0H509.00" stroke="#1F2328" stroke-width="1"/>
+<circle cx="18" cy="17.0" r="4.5" fill="#FF2EC4"/>
+<circle cx="33" cy="17.0" r="4.5" fill="#00D4FF"/>
+<circle cx="48" cy="17.0" r="4.5" fill="#39FF5E"/>
+<text x="254.50" y="21.0" fill="#6E7581" text-anchor="middle" font-size="11">j4yz0n@kali: ~/certs</text>
+<path d="M25.00 53.75L25.00 74.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M25.00 53.75L40.00 53.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M25.00 74.75L35.50 74.75" stroke="#6E7581" stroke-width="1"/>
+<text x="37.00" y="58.00" fill="#6E7581" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">(</text>
+<text x="44.50" y="58.00" fill="#39FF5E" font-weight="600" textLength="60.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">jonathan</text>
+<circle cx="108.25" cy="53.75" r="4.4" fill="none" stroke="#6E7581" stroke-width="1"/><text x="108.25" y="56.25" fill="#6E7581" font-size="7" text-anchor="middle" font-weight="600">K</text>
+<text x="112.00" y="58.00" fill="#39FF5E" font-weight="600" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">kali</text>
+<text x="142.00" y="58.00" fill="#6E7581" textLength="22.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">)-[</text>
+<text x="164.50" y="58.00" fill="#00D4FF" textLength="52.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">~/certs</text>
+<text x="217.00" y="58.00" fill="#6E7581" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">]</text>
+<text x="37.00" y="79.00" fill="#39FF5E" font-weight="600" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">$</text>
+<text x="52.00" y="79.00" fill="#E6E8EC" font-weight="500" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">tree</text>
+<text x="89.50" y="79.00" fill="#8B919C" textLength="120.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">-L 2 --dirsfirst</text>
+<text x="22.00" y="121.00" fill="#6E7581" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">.</text>
+<path d="M33.25 120.75L33.25 305.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M33.25 137.75L47.50 137.75" stroke="#6E7581" stroke-width="1"/>
+<text x="52.00" y="142.00" fill="#00D4FF" font-weight="500" textLength="105.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">cisco-academy/</text>
+<path d="M63.25 141.75L63.25 179.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M63.25 158.75L77.50 158.75" stroke="#6E7581" stroke-width="1"/>
+<text x="82.00" y="163.00" fill="#E6E8EC" textLength="277.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">gerenciamento-de-ameacas-ciberneticas</text>
+<path d="M365.50 158.75L427.00 158.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="434.50" y="163.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2025</text>
+<path d="M471.55 158.75L474.70 161.69L479.95 155.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M63.25 179.75L77.50 179.75" stroke="#6E7581" stroke-width="1"/>
+<text x="82.00" y="184.00" fill="#E6E8EC" textLength="202.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">introducao-a-ciberseguranca</text>
+<path d="M290.50 179.75L427.00 179.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="434.50" y="184.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2025</text>
+<path d="M471.55 179.75L474.70 182.69L479.95 176.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33.25 200.75L47.50 200.75" stroke="#6E7581" stroke-width="1"/>
+<text x="52.00" y="205.00" fill="#00D4FF" font-weight="500" textLength="135.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">fundacao-bradesco/</text>
+<path d="M63.25 204.75L63.25 242.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M63.25 221.75L77.50 221.75" stroke="#6E7581" stroke-width="1"/>
+<text x="82.00" y="226.00" fill="#E6E8EC" textLength="270.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">etica-no-desenvolvimento-de-sistemas</text>
+<path d="M358.00 221.75L427.00 221.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="434.50" y="226.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2023</text>
+<path d="M471.55 221.75L474.70 224.69L479.95 218.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M63.25 242.75L77.50 242.75" stroke="#6E7581" stroke-width="1"/>
+<text x="82.00" y="247.00" fill="#E6E8EC" textLength="270.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">fundamentos-de-logica-de-programacao</text>
+<path d="M358.00 242.75L427.00 242.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="434.50" y="247.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2023</text>
+<path d="M471.55 242.75L474.70 245.69L479.95 239.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33.25 263.75L47.50 263.75" stroke="#6E7581" stroke-width="1"/>
+<text x="52.00" y="268.00" fill="#00D4FF" font-weight="500" textLength="135.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">pietro-m-oliveira/</text>
+<path d="M63.25 267.75L63.25 284.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M63.25 284.75L77.50 284.75" stroke="#6E7581" stroke-width="1"/>
+<text x="82.00" y="289.00" fill="#E6E8EC" textLength="270.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">logica-de-programacao-em-linguagem-c</text>
+<path d="M358.00 284.75L427.00 284.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="434.50" y="289.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2023</text>
+<path d="M471.55 284.75L474.70 287.69L479.95 281.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33.25 305.75L47.50 305.75" stroke="#6E7581" stroke-width="1"/>
+<text x="52.00" y="310.00" fill="#00D4FF" font-weight="500" textLength="82.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">scrumstudy/</text>
+<path d="M63.25 309.75L63.25 326.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M63.25 326.75L77.50 326.75" stroke="#6E7581" stroke-width="1"/>
+<text x="82.00" y="331.00" fill="#E6E8EC" textLength="210.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">scrum-fundamentals-certified</text>
+<path d="M298.00 326.75L427.00 326.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="434.50" y="331.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2024</text>
+<path d="M471.55 326.75L474.70 329.69L479.95 323.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="22.00" y="373.00" fill="#6E7581" textLength="240.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">4 diretórios · 6 certificados · </text>
+<text x="262.00" y="373.00" fill="#39FF5E" textLength="90.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">6 concluídos</text>
+<path d="M25.00 410.75L25.00 431.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M25.00 410.75L40.00 410.75" stroke="#6E7581" stroke-width="1"/>
+<path d="M25.00 431.75L35.50 431.75" stroke="#6E7581" stroke-width="1"/>
+<text x="37.00" y="415.00" fill="#6E7581" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">(</text>
+<text x="44.50" y="415.00" fill="#39FF5E" font-weight="600" textLength="60.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">jonathan</text>
+<circle cx="108.25" cy="410.75" r="4.4" fill="none" stroke="#6E7581" stroke-width="1"/><text x="108.25" y="413.25" fill="#6E7581" font-size="7" text-anchor="middle" font-weight="600">K</text>
+<text x="112.00" y="415.00" fill="#39FF5E" font-weight="600" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">kali</text>
+<text x="142.00" y="415.00" fill="#6E7581" textLength="22.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">)-[</text>
+<text x="164.50" y="415.00" fill="#00D4FF" textLength="52.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">~/certs</text>
+<text x="217.00" y="415.00" fill="#6E7581" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">]</text>
+<text x="37.00" y="436.00" fill="#39FF5E" font-weight="600" textLength="7.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">$</text>
+<rect x="52.00" y="425.75" width="6.38" height="12.25" fill="#E6E8EC" opacity=".85"/>
+</svg>
