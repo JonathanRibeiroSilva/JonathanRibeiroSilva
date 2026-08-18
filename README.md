@@ -249,6 +249,31 @@ authorization in every service — reviewed with the same checklist I use on a p
 
 ## `04` / Certificados · Certificates
 
+```console
+┌──(jonathan㉿kali)-[~/certs]
+└─$ tree -L 2 --dirsfirst
+
+.
+├── cisco-academy/
+│   ├── gerenciamento-de-ameacas-ciberneticas ....... 2025  ✔
+│   └── introducao-a-ciberseguranca ................. 2025  ✔
+├── fundacao-bradesco/
+│   ├── etica-no-desenvolvimento-de-sistemas ........ 2023  ✔
+│   └── fundamentos-de-logica-de-programacao ........ 2023  ✔
+├── pietro-m-oliveira/
+│   └── logica-de-programacao-em-linguagem-c ........ 2023  ✔
+└── scrumstudy/
+    └── scrum-fundamentals-certified ................ 2024  ✔
+
+4 diretórios · 6 certificados · 6 concluídos
+
+┌──(jonathan㉿kali)-[~/certs]
+└─$ ▮
+```
+
+<details>
+<summary>📋 <b>Tabela · plain table</b></summary>
+
 | Emissor | Trilha | Ano | Status |
 |:--|:--|:--|:--|
 | Cisco Academy | Gerenciamento de Ameaças Cibernéticas | 2025 | concluído |
@@ -257,3 +282,5 @@ authorization in every service — reviewed with the same checklist I use on a p
 | Fundação Bradesco | Ética no Desenvolvimento de Sistemas | 2023 | concluído |
 | Prof. Pietro M. Oliveira | Lógica de Programação em Linguagem C | 2023 | concluído |
 | Fundação Bradesco | Fundamentos de Lógica de Programação | 2023 | concluído |
+
+</details>
