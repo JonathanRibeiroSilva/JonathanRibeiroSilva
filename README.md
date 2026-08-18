@@ -8,7 +8,7 @@
 
 <br>
 
-<img alt="Estatísticas do GitHub" height="170" src="https://github-stats-extended.vercel.app/api?username=JonathanRibeiroSilva&show_icons=true&hide=stars&include_all_commits=true&hide_border=true&bg_color=000000&title_color=39FF5E&text_color=E6E8EC&icon_color=00D4FF"/> <img alt="Linguagens mais usadas" height="170" src="https://github-stats-extended.vercel.app/api/top-langs?username=JonathanRibeiroSilva&layout=compact&hide_border=true&bg_color=000000&title_color=39FF5E&text_color=E6E8EC"/>
+<img alt="Estatísticas do GitHub" height="170" src="https://github-stats-extended.vercel.app/api?username=JonathanRibeiroSilva&locale=pt-br&show_icons=true&hide=stars&include_all_commits=true&hide_border=true&bg_color=000000&title_color=39FF5E&text_color=E6E8EC&icon_color=00D4FF"/> <img alt="Linguagens mais usadas" height="170" src="https://github-stats-extended.vercel.app/api/top-langs?username=JonathanRibeiroSilva&locale=pt-br&layout=compact&hide_border=true&bg_color=000000&title_color=39FF5E&text_color=E6E8EC"/>
 
 <img alt="Sequência de contribuições" src="https://streak-stats.demolab.com?user=JonathanRibeiroSilva&locale=pt_BR&background=000000&border=1F2328&stroke=1F2328&ring=39FF5E&fire=FF2EC4&currStreakNum=E6E8EC&sideNums=E6E8EC&currStreakLabel=39FF5E&sideLabels=6E7581&dates=6E7581"/>
 
@@ -211,9 +211,9 @@ regression test.
   <img height="88" alt="Runas" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/runas-light.png"/>
 </picture>
 
-### [RunasERP](https://github.com/DenebCorp/RunasERP) — ERP em microsserviços
+### RunasERP — ERP em microsserviços
 
-`8+ microsserviços` &nbsp; `100% dockerizado` &nbsp; `1 gateway central` &nbsp; `APIs REST versionadas`
+`8+ microsserviços` &nbsp; `100% dockerizado` &nbsp; `1 gateway central` &nbsp; `APIs REST versionadas` &nbsp; `repositório privado`
 
 Operação de varejo rodando em planilhas: estoque, pedidos e pagamentos sem fonte única de verdade e
 sem trilha de auditoria. Virou um ERP em microsserviços com gateway centralizado, autenticação por
