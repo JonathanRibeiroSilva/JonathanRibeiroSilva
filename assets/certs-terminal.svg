@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509.00 458.00" width="509.00" height="458.00" role="img" aria-label="Terminal listando 6 certificados agrupados por emissor" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, &quot;Liberation Mono&quot;, monospace" font-size="12.5">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509.00 458.00" width="509.00" height="458.00" role="img" aria-label="Terminal listing 6 certificates grouped by issuer" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, &quot;Liberation Mono&quot;, monospace" font-size="12.5">
 <style>
 .t-cmd{transform:translateX(157.50px);animation:cmd 11s steps(21) infinite}
 .t-out{transform:translateY(357.00px);animation:out 11s steps(17) infinite}
@@ -36,34 +36,34 @@
 <text x="52.00" y="142.00" fill="#00D4FF" font-weight="500" textLength="105.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">cisco-academy/</text>
 <path d="M63.25 141.75L63.25 179.75" stroke="#6E7581" stroke-width="1"/>
 <path d="M63.25 158.75L77.50 158.75" stroke="#6E7581" stroke-width="1"/>
-<text x="82.00" y="163.00" fill="#E6E8EC" textLength="277.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">gerenciamento-de-ameacas-ciberneticas</text>
-<path d="M365.50 158.75L427.00 158.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="82.00" y="163.00" fill="#E6E8EC" textLength="172.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">cyber-threat-management</text>
+<path d="M260.50 158.75L427.00 158.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
 <text x="434.50" y="163.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2025</text>
 <path d="M471.55 158.75L474.70 161.69L479.95 155.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M63.25 179.75L77.50 179.75" stroke="#6E7581" stroke-width="1"/>
-<text x="82.00" y="184.00" fill="#E6E8EC" textLength="202.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">introducao-a-ciberseguranca</text>
-<path d="M290.50 179.75L427.00 179.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="82.00" y="184.00" fill="#E6E8EC" textLength="217.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">introduction-to-cybersecurity</text>
+<path d="M305.50 179.75L427.00 179.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
 <text x="434.50" y="184.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2025</text>
 <path d="M471.55 179.75L474.70 182.69L479.95 176.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M33.25 200.75L47.50 200.75" stroke="#6E7581" stroke-width="1"/>
 <text x="52.00" y="205.00" fill="#00D4FF" font-weight="500" textLength="135.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">fundacao-bradesco/</text>
 <path d="M63.25 204.75L63.25 242.75" stroke="#6E7581" stroke-width="1"/>
 <path d="M63.25 221.75L77.50 221.75" stroke="#6E7581" stroke-width="1"/>
-<text x="82.00" y="226.00" fill="#E6E8EC" textLength="270.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">etica-no-desenvolvimento-de-sistemas</text>
-<path d="M358.00 221.75L427.00 221.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="82.00" y="226.00" fill="#E6E8EC" textLength="217.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">ethics-in-systems-development</text>
+<path d="M305.50 221.75L427.00 221.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
 <text x="434.50" y="226.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2023</text>
 <path d="M471.55 221.75L474.70 224.69L479.95 218.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M63.25 242.75L77.50 242.75" stroke="#6E7581" stroke-width="1"/>
-<text x="82.00" y="247.00" fill="#E6E8EC" textLength="270.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">fundamentos-de-logica-de-programacao</text>
-<path d="M358.00 242.75L427.00 242.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="82.00" y="247.00" fill="#E6E8EC" textLength="225.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">programming-logic-fundamentals</text>
+<path d="M313.00 242.75L427.00 242.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
 <text x="434.50" y="247.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2023</text>
 <path d="M471.55 242.75L474.70 245.69L479.95 239.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M33.25 263.75L47.50 263.75" stroke="#6E7581" stroke-width="1"/>
 <text x="52.00" y="268.00" fill="#00D4FF" font-weight="500" textLength="135.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">pietro-m-oliveira/</text>
 <path d="M63.25 267.75L63.25 284.75" stroke="#6E7581" stroke-width="1"/>
 <path d="M63.25 284.75L77.50 284.75" stroke="#6E7581" stroke-width="1"/>
-<text x="82.00" y="289.00" fill="#E6E8EC" textLength="270.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">logica-de-programacao-em-linguagem-c</text>
-<path d="M358.00 284.75L427.00 284.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
+<text x="82.00" y="289.00" fill="#E6E8EC" textLength="165.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">programming-logic-in-c</text>
+<path d="M253.00 284.75L427.00 284.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
 <text x="434.50" y="289.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2023</text>
 <path d="M471.55 284.75L474.70 287.69L479.95 281.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M33.25 305.75L47.50 305.75" stroke="#6E7581" stroke-width="1"/>
@@ -74,8 +74,8 @@
 <path d="M298.00 326.75L427.00 326.75" stroke="#6E7581" stroke-width="1" stroke-dasharray="1 4" stroke-linecap="round"/>
 <text x="434.50" y="331.00" fill="#FF2EC4" textLength="30.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">2024</text>
 <path d="M471.55 326.75L474.70 329.69L479.95 323.60" fill="none" stroke="#39FF5E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="22.00" y="373.00" fill="#6E7581" textLength="240.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">4 diretórios · 6 certificados · </text>
-<text x="262.00" y="373.00" fill="#39FF5E" textLength="90.00" lengthAdjust="spacingAndGlyphs" xml:space="preserve">6 concluídos</text>
+<text x="22.00" y="373.00" fill="#6E7581" textLength="247.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">4 directories · 6 certificates · </text>
+<text x="269.50" y="373.00" fill="#39FF5E" textLength="82.50" lengthAdjust="spacingAndGlyphs" xml:space="preserve">6 completed</text>
 <path d="M25.00 410.75L25.00 431.75" stroke="#6E7581" stroke-width="1"/>
 <path d="M25.00 410.75L40.00 410.75" stroke="#6E7581" stroke-width="1"/>
 <path d="M25.00 431.75L35.50 431.75" stroke="#6E7581" stroke-width="1"/>

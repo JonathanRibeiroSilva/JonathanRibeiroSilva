@@ -139,13 +139,13 @@ def display_rows(data):
             name = r["full"].split("/")[-1] if r["full"].startswith(LOGIN + "/") \
                 else r["full"]
             shown.append((r["commits"], name,
-                          "privado" if r["private"] else "público"))
+                          "private" if r["private"] else "public"))
         else:
             hidden += r["commits"]
             hidden_n += 1
     if hidden:
-        shown.append((hidden, "outros",
-                      "%d repositório%s" % (hidden_n, "s" if hidden_n > 1 else "")))
+        shown.append((hidden, "others",
+                      "%d repositor%s" % (hidden_n, "ies" if hidden_n > 1 else "y")))
     return shown
 
 # ---------------------------------------------------------------- desenho
@@ -272,15 +272,15 @@ def build(data, stamp):
         o.append(text(NAME_COL, r, name, T["fg"]))
         o.append(rule(cx(NAME_COL) + len(name) * CH + CH * 0.8, mid(r),
                       cx(DOTS_END), mid(r), T["dim"], dashed=True))
-        o.append(text(TAG_COL, r, tag, T["year"] if tag == "privado" else T["dim"]))
+        o.append(text(TAG_COL, r, tag, T["year"] if tag == "private" else T["dim"]))
         r += 1
 
     r += 1
-    head = "%d commits · %d pull requests · %d repositórios" % (
+    head = "%d commits · %d pull requests · %d repositories" % (
         data["total"], data["prs"], data["repos"])
     o.append(text(0, r, head, T["dim"]))
     r += 1
-    o.append(text(0, r, "atualizado em %s" % stamp, T["dim"]))
+    o.append(text(0, r, "updated %s" % stamp, T["dim"]))
 
     prow = r + 2
     o += prompt(prow, trailing=True)
@@ -302,7 +302,7 @@ def build(data, stamp):
     front = ['<rect x=".5" y=".5" width="%.2f" height="%.2f" rx="9" fill="none" '
              'stroke="%s"/>' % (W - 1, h - 1, T["edge"])]
 
-    alt = ("Terminal: %d commits em %d distribuídos por %d repositórios"
+    alt = ("Terminal: %d commits in %d across %d repositories"
            % (data["total"], YEAR, data["repos"]))
     return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %.2f %.2f" '
             'width="%.2f" height="%.2f" role="img" aria-label="%s" '

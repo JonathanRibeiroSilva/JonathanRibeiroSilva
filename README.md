@@ -4,19 +4,19 @@
 
 <img alt="Cyber Security Analyst • Fullstack Developer" src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=19&duration=3200&pause=900&color=39FF5E&background=000000&center=true&vCenter=true&width=1000&height=52&lines=Cyber+Security+Analyst-Fullstack+Developer"/>
 
-<a href="https://www.linkedin.com/in/jonathan-ribeiro-da-silva"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=00D4FF"/></a> <a href="https://tryhackme.com/p/J4yz0n"><img alt="TryHackMe" src="https://img.shields.io/badge/TryHackMe-000000?style=for-the-badge&logo=tryhackme&logoColor=39FF5E"/></a> <a href="mailto:jonathanribeirodasilva@outlook.com.br"><img alt="E-mail" src="https://img.shields.io/badge/E--mail-000000?style=for-the-badge&logo=maildotru&logoColor=FF2EC4"/></a>
+<a href="https://www.linkedin.com/in/jonathan-ribeiro-da-silva"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=00D4FF"/></a> <a href="https://tryhackme.com/p/J4yz0n"><img alt="TryHackMe" src="https://img.shields.io/badge/TryHackMe-000000?style=for-the-badge&logo=tryhackme&logoColor=39FF5E"/></a> <a href="mailto:jonathanribeirodasilva@outlook.com.br"><img alt="Email" src="https://img.shields.io/badge/E--mail-000000?style=for-the-badge&logo=maildotru&logoColor=FF2EC4"/></a>
 
 <br>
 
-<img width="509" alt="Terminal listando commits de 2026 por repositório, incluindo os privados" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/stats-terminal.svg"/>
+<img width="509" alt="Terminal listing 2026 commits per repository, private ones included" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/stats-terminal.svg"/>
 
-<img width="880" alt="Cobra percorrendo o gráfico de contribuições do último ano" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/snake.svg"/>
+<img width="880" alt="Snake crossing the last year's contribution graph" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/snake.svg"/>
 
 </div>
 
 ---
 
-## `01` / Sobre · About
+## `01` / About
 
 ```console
 ┌──(jonathan㉿kali)-[~]
@@ -24,45 +24,30 @@
 
   User      : j4yz0n
   Hostname  : Jonathan Ribeiro
-  Papel     : Pentester em formação · Dev Full Stack
-  SO        : Kali Linux 2026.1
-  Formação  : Tecnologia + trilhas de segurança ofensiva
-  Objetivo  : Pentester em time de segurança ofensiva, onde a
-              leitura de código faz diferença no relatório final
+  Role      : Cyber Security Analyst · Fullstack Developer
+  OS        : Kali Linux 2026.1
+  Studies   : Technology degree + offensive security tracks
+  Goal      : An offensive security team, where reading code
+              changes what ends up in the final report
 ```
-
-Sou apaixonado por cibersegurança. Construo sistemas distribuídos de dia e estudo ataques de noite,
-e uma prática alimenta a outra.
-
-<details>
-<summary>🇬🇧 <b>English</b></summary>
 
 I'm passionate about cybersecurity. I build distributed systems by day and study attacks by night,
 and each side sharpens the other.
 
-</details>
-
 ---
 
-## `02` / Ferramentas · Tools
-
-Nada de barra de progresso. Cada item aqui apareceu em um laboratório, em um writeup ou em um
-sistema que eu coloquei em produção.
-
-<details>
-<summary>🇬🇧 <b>English</b></summary>
+## `02` / Tools
 
 No progress bars. Everything here showed up in a lab, in a writeup or in a system I shipped to
 production — and I can explain what I did with it.
 
-</details>
+<h4>Offensive security &nbsp;<code>main focus</code></h4>
 
-<h4>Segurança ofensiva &nbsp;<code>foco principal</code></h4>
-
-As colunas são as fases de um engajamento. A coluna em que a ferramenta aparece diz quando ela entra.
+The columns are the phases of an engagement. The column a tool sits in tells you when it comes
+into play.
 
 <table>
-<tr><th align="center" width="20%"><code>01</code><br>Reconhecimento</th><th align="center" width="20%"><code>02</code><br>Enumeração</th><th align="center" width="20%"><code>03</code><br>Exploração</th><th align="center" width="20%"><code>04</code><br>Pós-exploração</th><th align="center" width="20%"><code>05</code><br>Relatório</th></tr>
+<tr><th align="center" width="20%"><code>01</code><br>Recon</th><th align="center" width="20%"><code>02</code><br>Enumeration</th><th align="center" width="20%"><code>03</code><br>Exploitation</th><th align="center" width="20%"><code>04</code><br>Post-exploitation</th><th align="center" width="20%"><code>05</code><br>Reporting</th></tr>
 <tr>
 <td align="center" valign="top">
 
@@ -101,10 +86,10 @@ As colunas são as fases de um engajamento. A coluna em que a ferramenta aparece
 </table>
 
 <p>
-  <img height="28" alt="Kali Linux" title="Kali Linux" src="https://cdn.simpleicons.org/kalilinux/0b7c96/00d4ff"/> &nbsp; <sub><b>Kali Linux</b> — plataforma, atravessa todas as fases</sub>
+  <img height="28" alt="Kali Linux" title="Kali Linux" src="https://cdn.simpleicons.org/kalilinux/0b7c96/00d4ff"/> &nbsp; <sub><b>Kali Linux</b> — the platform, spans every phase</sub>
 </p>
 
-<h4>Frontend &nbsp;<code>o que o usuário toca</code></h4>
+<h4>Frontend &nbsp;<code>what the user touches</code></h4>
 <p>
   <img height="40" alt="JavaScript" title="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>&nbsp;&nbsp;
   <img height="40" alt="TypeScript" title="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>&nbsp;&nbsp;
@@ -114,7 +99,7 @@ As colunas são as fases de um engajamento. A coluna em que a ferramenta aparece
   <img height="40" alt="Tailwind CSS" title="Tailwind CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"/>
 </p>
 
-<h4>Backend e APIs &nbsp;<code>onde a regra mora</code></h4>
+<h4>Backend &amp; APIs &nbsp;<code>where the rules live</code></h4>
 <p>
   <img height="40" alt="Python" title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>&nbsp;&nbsp;
   <img height="40" alt="Java" title="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>&nbsp;&nbsp;
@@ -124,19 +109,19 @@ As colunas são as fases de um engajamento. A coluna em que a ferramenta aparece
   <img height="40" alt="Swagger" title="Swagger" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg"/>
 </p>
 
-<h4>Dados &nbsp;<code>o que sobrevive ao deploy</code></h4>
+<h4>Data &nbsp;<code>what survives the deploy</code></h4>
 <p>
   <img height="40" alt="PostgreSQL" title="PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"/>&nbsp;&nbsp;
   <img height="40" alt="Redis" title="Redis" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"/>
 </p>
 
-<h4>Fluxo de trabalho &nbsp;<code>o dia a dia</code></h4>
+<h4>Workflow &nbsp;<code>day to day</code></h4>
 <p>
   <img height="40" alt="Git" title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>&nbsp;&nbsp;
   <img height="40" alt="Vim" title="Vim" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg"/>
 </p>
 
-<h4>Infraestrutura &nbsp;<code>onde a aplicação vive</code> &nbsp;·&nbsp; <code>CI/CD</code></h4>
+<h4>Infrastructure &nbsp;<code>where the app lives</code> &nbsp;·&nbsp; <code>CI/CD</code></h4>
 <p>
   <img height="40" alt="Docker" title="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"/>&nbsp;&nbsp;
   <img height="40" alt="RabbitMQ" title="RabbitMQ" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg"/>&nbsp;&nbsp;
@@ -148,71 +133,53 @@ As colunas são as fases de um engajamento. A coluna em que a ferramenta aparece
 
 ---
 
-## `03` / Projetos · Projects
+## `03` / Projects
 
 <img src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/hubitat.svg" height="120" alt="Hubitat"/>
 
-### [Hubitat](https://github.com/JonathanRibeiroSilva/Hubitat) — plataforma de colaboração 3D self-hosted
+### [Hubitat](https://github.com/JonathanRibeiroSilva/Hubitat) — self-hosted 3D collaboration platform
 
 <table>
-<tr><td><sub><b>Papel</b></sub></td><td><sub>Autor único — arquitetura, servidor e cliente 3D</sub></td></tr>
-<tr><td><sub><b>Escala</b></sub></td><td><sub>7 containers · <code>docker compose up</code></sub></td></tr>
+<tr><td><sub><b>Role</b></sub></td><td><sub>Sole author — architecture, server and 3D client</sub></td></tr>
+<tr><td><sub><b>Scale</b></sub></td><td><sub>7 containers · one <code>docker compose up</code></sub></td></tr>
 <tr><td><sub><b>Stack</b></sub></td><td><sub>TypeScript · NestJS · Three.js · LiveKit · PostgreSQL</sub></td></tr>
-<tr><td><sub><b>Segurança</b></sub></td><td><sub>Movimento autoritativo no cliente; audiência resolvida no servidor</sub></td></tr>
-<tr><td><sub><b>Licença</b></sub></td><td><sub>MIT · self-hosted, zero telemetria</sub></td></tr>
+<tr><td><sub><b>Security</b></sub></td><td><sub>Client-authoritative movement; audience resolved on the server</sub></td></tr>
+<tr><td><sub><b>License</b></sub></td><td><sub>MIT · self-hosted, zero telemetry</sub></td></tr>
 </table>
 
-Videochamada coloca todo mundo num retângulo e dá a palavra a uma pessoa por vez. Hubitat troca isso
-por um **lugar**: uma sala 3D onde o time anda, ouve quem está por perto, chega numa conversa e sai
-dela — como num escritório físico. Voz e vídeo com queda por distância e panorâmica direcional, zonas
-autorais (privada, holofote, portal), editor de mapa embutido e objetos colaborativos que sobrevivem
-ao fim da reunião.
+Video calls put everyone in one rectangle and give the floor to one person at a time. Hubitat
+replaces that with a **place**: a 3D room your team walks around in, where you hear the people near
+you, drift over to a conversation and step away from it — like a physical office. Spatial voice and
+video with distance falloff and directional panning, authored zones (private, spotlight, portal), a
+built-in map editor, and collaborative objects that outlive the meeting.
 
-Roda inteiro no **seu hardware**. Não existe plano hospedado, conta no servidor de terceiro nem
-telemetria.
+The whole thing runs on **your own hardware**. There is no hosted plan, no account on somebody
+else's server, and no telemetry.
 
 > [!IMPORTANT]
-> **A decisão de segurança que define o projeto** — o movimento é autoritativo no cliente, então um
-> cliente adulterado atravessa parede. O que ele **não** consegue é escapar do servidor: interesse,
-> ocupação de zona e resolução de audiência são calculados no servidor a partir da posição reportada.
-> Mentir sobre onde se está não coloca ninguém dentro de uma conversa privada.
-> Chat e áudio chamam o **mesmo** `resolveAudience()` — não há verificação de distância no código de
-> chat, então as duas superfícies não podem divergir. Papéis vivem numa matriz de capacidade única,
-> lida pelo guard HTTP, pelo dispatcher WebSocket e pelo cliente que desenha os botões.
+> **The security decision that defines the project** — movement is client-authoritative, so a
+> tampered client walks through walls. What it **cannot** do is escape the server: interest, zone
+> occupancy and audience resolution are all computed server-side from the reported position. Lying
+> about where you are does not put you inside a private conversation.
+> Chat and audio call the **same** `resolveAudience()` — there is no distance check in the chat code,
+> so the two surfaces cannot drift apart. Roles live in a single capability matrix, read by the HTTP
+> guard, the WebSocket dispatcher and the client that draws the buttons.
 
 ```mermaid
 %%{init:{'theme':'base','themeVariables':{'primaryColor':'#0D1117','primaryTextColor':'#E6E8EC','primaryBorderColor':'#39FF5E','lineColor':'#6E7581','secondaryColor':'#111820','tertiaryColor':'#111820','clusterBkg':'#0A0E13','clusterBorder':'#2A3138','fontFamily':'ui-monospace, monospace','fontSize':'13px'}}}%%
 flowchart LR
-  subgraph CLI["CLIENTE — não confiável"]
-    M["movimento<br/>atravessa parede"]
+  subgraph CLI["CLIENT — untrusted"]
+    M["movement<br/>walks through walls"]
   end
-  subgraph SRV["SERVIDOR — autoritativo"]
+  subgraph SRV["SERVER — authoritative"]
     RA["resolveAudience()"]
   end
-  M -- "posição reportada" --> RA
+  M -- "reported position" --> RA
   RA --> CH["chat"]
-  RA --> AV["áudio + vídeo"]
+  RA --> AV["audio + video"]
   style M fill:#2A0F20,stroke:#FF2EC4,color:#FF2EC4
   style RA fill:#0F2417,stroke:#39FF5E,color:#39FF5E
 ```
-
-<details>
-<summary>🇬🇧 <b>English</b></summary>
-
-Video calls put everyone in one rectangle and give the floor to one person at a time. Hubitat
-replaces that with a **place**: a 3D room your team walks around in, where you hear the people near
-you, drift over to a conversation and step away from it. Spatial voice and video with distance
-falloff and directional audio, authored zones, a built-in map editor, and collaborative objects that
-outlive the meeting. Everything runs on **your own hardware** — no hosted plan, no account on
-somebody else's server, no telemetry.
-
-**The security decision that defines the project** — movement is client-authoritative, so a tampered
-client can walk through walls. What it cannot do is escape server-side decisions: interest, zone
-occupancy and audience resolution are all computed on the server from the reported position. Chat and
-audio call the same `resolveAudience()`, so the two surfaces cannot drift apart, and roles live in one
-capability matrix read by the HTTP guard, the WebSocket dispatcher and the client.
-
-</details>
 
 <p>
   <img height="34" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>&nbsp;
@@ -224,52 +191,39 @@ capability matrix read by the HTTP guard, the WebSocket dispatcher and the clien
   <code>LiveKit</code> <code>WebRTC</code> <code>Yjs CRDT</code> <code>Rapier</code> <code>pg-boss</code> <code>MinIO</code> <code>Argon2</code>
 </p>
 
-<a href="https://github.com/JonathanRibeiroSilva/Hubitat"><img alt="Código-fonte" src="https://img.shields.io/badge/C%C3%B3digo--fonte-000000?style=for-the-badge&logo=github&logoColor=39FF5E"/></a> <a href="https://github.com/JonathanRibeiroSilva/Hubitat/blob/main/docs/architecture.md"><img alt="Arquitetura" src="https://img.shields.io/badge/Arquitetura_%2B_ADRs-000000?style=for-the-badge&logo=readthedocs&logoColor=00D4FF"/></a> <a href="https://github.com/JonathanRibeiroSilva/Hubitat#self-hosting"><img alt="Self-hosted" src="https://img.shields.io/badge/docker_compose_up-000000?style=for-the-badge&logo=docker&logoColor=FF2EC4"/></a>
+<a href="https://github.com/JonathanRibeiroSilva/Hubitat"><img alt="Source code" src="https://img.shields.io/badge/Source--code-000000?style=for-the-badge&logo=github&logoColor=39FF5E"/></a> <a href="https://github.com/JonathanRibeiroSilva/Hubitat/blob/main/docs/architecture.md"><img alt="Architecture" src="https://img.shields.io/badge/Architecture_%2B_ADRs-000000?style=for-the-badge&logo=readthedocs&logoColor=00D4FF"/></a> <a href="https://github.com/JonathanRibeiroSilva/Hubitat#self-hosting"><img alt="Self-hosted" src="https://img.shields.io/badge/docker_compose_up-000000?style=for-the-badge&logo=docker&logoColor=FF2EC4"/></a>
 
 <img src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/cyph3r-x.png" height="88" alt="Cyph3r X"/>
 
-### [Cyph3r X](https://github.com/JonathanRibeiroSilva/Cyph3r-X) — cofre de senhas desktop, open source
+### [Cyph3r X](https://github.com/JonathanRibeiroSilva/Cyph3r-X) — open-source desktop password vault
 
 <table>
-<tr><td><sub><b>Papel</b></sub></td><td><sub>Autor único — aplicação e camada de criptografia</sub></td></tr>
-<tr><td><sub><b>Entrega</b></sub></td><td><sub>Um único <code>.exe</code>, sem instalador</sub></td></tr>
+<tr><td><sub><b>Role</b></sub></td><td><sub>Sole author — application and cryptography layer</sub></td></tr>
+<tr><td><sub><b>Ships as</b></sub></td><td><sub>A single <code>.exe</code>, no installer</sub></td></tr>
 <tr><td><sub><b>Stack</b></sub></td><td><sub>Python · Flask · SQLite · PyWebView · PyInstaller</sub></td></tr>
-<tr><td><sub><b>Segurança</b></sub></td><td><sub>PBKDF2-HMAC-SHA256 600k · Fernet · DEK nunca em disco</sub></td></tr>
-<tr><td><sub><b>Licença</b></sub></td><td><sub>MIT · 100% local, nada sincroniza</sub></td></tr>
+<tr><td><sub><b>Security</b></sub></td><td><sub>PBKDF2-HMAC-SHA256 600k · Fernet · DEK never on disk</sub></td></tr>
+<tr><td><sub><b>License</b></sub></td><td><sub>MIT · fully local, nothing syncs</sub></td></tr>
 </table>
 
-Gerenciadores de senha na nuvem pedem confiança cega — você não sabe o que o servidor guarda, nem o
-que ele consegue ler sobre você. Cyph3r X é um cofre **100% local**, empacotado num único `.exe`:
-banco SQLite na máquina do usuário, nada sincroniza com a nuvem e a DEK nunca toca o disco.
+Cloud password managers ask for blind trust — you don't know what the server stores, nor what it
+can read about you. Cyph3r X is a **fully local** vault shipped as a single `.exe`: the SQLite
+database stays on the user's machine, nothing syncs to the cloud, and the DEK never touches disk.
 
 > [!IMPORTANT]
-> **Como eu ataquei o meu próprio cofre** — bypass da proteção anti-captura de tela · timing na
-> verificação da master key · exfiltração via clipboard · fuzzing do importador (integrity check,
-> allow-list de tabelas, bloqueio de triggers/views).
-> Cada achado virou **issue + teste de regressão**.
+> **How I attacked my own vault** — screen-capture protection bypass · timing on master key
+> verification · clipboard exfiltration · importer fuzzing (integrity check, table allow-list,
+> trigger and view blocking).
+> Every finding became an **issue plus a regression test**.
 
 ```mermaid
 %%{init:{'theme':'base','themeVariables':{'primaryColor':'#0D1117','primaryTextColor':'#E6E8EC','primaryBorderColor':'#39FF5E','lineColor':'#6E7581','secondaryColor':'#111820','tertiaryColor':'#111820','clusterBkg':'#0A0E13','clusterBorder':'#2A3138','fontFamily':'ui-monospace, monospace','fontSize':'13px'}}}%%
 flowchart LR
-  MK["master key<br/>digitada"] -- "PBKDF2 · 600k" --> KEK["KEK<br/>só em memória"]
-  KEK -- "Fernet" --> DEK["DEK<br/>só em memória"]
-  DEK --> DB["SQLite na máquina do usuário<br/>nada sincroniza"]
+  MK["master key<br/>typed in"] -- "PBKDF2 · 600k" --> KEK["KEK<br/>memory only"]
+  KEK -- "Fernet" --> DEK["DEK<br/>memory only"]
+  DEK --> DB["SQLite on the user's machine<br/>nothing syncs"]
   style DEK fill:#0F2417,stroke:#39FF5E,color:#39FF5E
   style DB fill:#0F2417,stroke:#39FF5E,color:#39FF5E
 ```
-
-<details>
-<summary>🇬🇧 <b>English</b></summary>
-
-Cloud password managers ask for blind trust — you don't know what the server stores, nor what it can
-read about you. Cyph3r X is a **fully local** vault shipped as a single `.exe`: the SQLite database
-stays on the user's machine, nothing syncs to the cloud, and the DEK never touches disk.
-
-**How I attacked my own vault** — screen-capture protection bypass · timing on master key
-verification · clipboard exfiltration · importer fuzzing. Every finding became an issue plus a
-regression test.
-
-</details>
 
 <p>
   <img height="34" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>&nbsp;
@@ -278,7 +232,7 @@ regression test.
   <code>Waitress</code> <code>PyWebView</code> <code>PBKDF2-HMAC-SHA256</code> <code>Fernet</code> <code>PyInstaller</code>
 </p>
 
-<a href="https://github.com/JonathanRibeiroSilva/Cyph3r-X/releases/latest/download/Cyph3r-X.exe"><img alt="Baixar .exe Windows" src="https://img.shields.io/badge/Baixar_.exe_%C2%B7_Windows-000000?style=for-the-badge&logo=windows&logoColor=00D4FF"/></a> <a href="https://github.com/JonathanRibeiroSilva/Cyph3r-X"><img alt="Código-fonte" src="https://img.shields.io/badge/C%C3%B3digo--fonte-000000?style=for-the-badge&logo=github&logoColor=39FF5E"/></a>
+<a href="https://github.com/JonathanRibeiroSilva/Cyph3r-X/releases/latest/download/Cyph3r-X.exe"><img alt="Download .exe for Windows" src="https://img.shields.io/badge/Download_.exe_%C2%B7_Windows-000000?style=for-the-badge&logo=windows&logoColor=00D4FF"/></a> <a href="https://github.com/JonathanRibeiroSilva/Cyph3r-X"><img alt="Source code" src="https://img.shields.io/badge/Source--code-000000?style=for-the-badge&logo=github&logoColor=39FF5E"/></a>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/runas-dark.png"/>
@@ -286,48 +240,37 @@ regression test.
   <img height="88" alt="Runas" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/runas-light.png"/>
 </picture>
 
-### RunasERP — ERP em microsserviços
+### RunasERP — microservices ERP
 
 <table>
-<tr><td><sub><b>Papel</b></sub></td><td><sub>Backend e infraestrutura</sub></td></tr>
-<tr><td><sub><b>Escala</b></sub></td><td><sub>8+ microsserviços · 100% dockerizado</sub></td></tr>
+<tr><td><sub><b>Role</b></sub></td><td><sub>Backend and infrastructure</sub></td></tr>
+<tr><td><sub><b>Scale</b></sub></td><td><sub>8+ microservices · fully dockerized</sub></td></tr>
 <tr><td><sub><b>Stack</b></sub></td><td><sub>FastAPI · PostgreSQL · RabbitMQ · Redis · Nginx · React</sub></td></tr>
-<tr><td><sub><b>Segurança</b></sub></td><td><sub>Gateway único atrás de Cloudflare · autorização por papel em cada serviço</sub></td></tr>
-<tr><td><sub><b>Acesso</b></sub></td><td><sub>Repositório privado</sub></td></tr>
+<tr><td><sub><b>Security</b></sub></td><td><sub>One gateway behind Cloudflare · role-based authorization in every service</sub></td></tr>
+<tr><td><sub><b>Access</b></sub></td><td><sub>Private repository</sub></td></tr>
 </table>
 
-Operação de varejo rodando em planilhas: estoque, pedidos e pagamentos sem fonte única de verdade e
-sem trilha de auditoria. Virou um ERP em microsserviços com gateway centralizado, autenticação por
-token, filas assíncronas para eventos de pedido e integração de pagamento com Mercado Pago.
+A retail operation running on spreadsheets: inventory, orders and payments with no single source of
+truth and no audit trail. It became a microservices ERP with a central gateway, token
+authentication, async queues for order events and Mercado Pago payment integration.
 
-A superfície ficou reduzida a um único gateway atrás de Cloudflare, segredos fora do repositório,
-autorização por papel em cada serviço — e revisei os endpoints com a mesma checklist que uso em
-pentest.
+The attack surface came down to one gateway behind Cloudflare, secrets out of the repo, and
+role-based authorization in every service — and I reviewed the endpoints with the same checklist I
+use on a pentest.
 
 ```mermaid
 %%{init:{'theme':'base','themeVariables':{'primaryColor':'#0D1117','primaryTextColor':'#E6E8EC','primaryBorderColor':'#39FF5E','lineColor':'#6E7581','secondaryColor':'#111820','tertiaryColor':'#111820','clusterBkg':'#0A0E13','clusterBorder':'#2A3138','fontFamily':'ui-monospace, monospace','fontSize':'13px'}}}%%
 flowchart LR
-  U["cliente"] --> CF["Cloudflare"]
-  CF --> GW["gateway<br/>autenticação por token"]
-  GW --> PED["pedidos"]
-  GW --> EST["estoque"]
-  GW --> PAG["pagamentos"]
-  PED -- "eventos" --> Q[["RabbitMQ"]]
+  U["client"] --> CF["Cloudflare"]
+  CF --> GW["gateway<br/>token authentication"]
+  GW --> PED["orders"]
+  GW --> EST["inventory"]
+  GW --> PAG["payments"]
+  PED -- "events" --> Q[["RabbitMQ"]]
   Q --> EST
   Q --> PAG
   style GW fill:#0F2417,stroke:#39FF5E,color:#39FF5E
 ```
-
-<details>
-<summary>🇬🇧 <b>English</b></summary>
-
-A retail operation running on spreadsheets: inventory, orders and payments with no single source of
-truth and no audit trail. It became a microservices ERP with a central gateway, token
-authentication, async queues for order events and Mercado Pago payment integration. The attack
-surface is reduced to one gateway behind Cloudflare, secrets out of the repo, and role-based
-authorization in every service — reviewed with the same checklist I use on a pentest.
-
-</details>
 
 <p>
   <img height="34" alt="FastAPI" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"/>&nbsp;
@@ -342,6 +285,6 @@ authorization in every service — reviewed with the same checklist I use on a p
 
 ---
 
-## `04` / Certificados · Certificates
+## `04` / Certificates
 
-<img width="509" alt="Terminal listando 6 certificados agrupados por emissor: Cisco Academy, Fundação Bradesco, Pietro M. Oliveira e SCRUMstudy" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/certs-terminal.svg"/>
+<img width="509" alt="Terminal listing 6 certificates grouped by issuer: Cisco Academy, Fundação Bradesco, Pietro M. Oliveira and SCRUMstudy" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/certs-terminal.svg"/>

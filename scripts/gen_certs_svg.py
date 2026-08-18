@@ -23,18 +23,18 @@ import os
 # (emissor_slug, [(trilha_slug, ano), ...])  -- a ordem aqui e a ordem exibida
 CERTS = [
     ("cisco-academy", [
-        ("gerenciamento-de-ameacas-ciberneticas", "2025"),
-        ("introducao-a-ciberseguranca",           "2025"),
+        ("cyber-threat-management", "2025"),
+        ("introduction-to-cybersecurity",  "2025"),
     ]),
     ("fundacao-bradesco", [
-        ("etica-no-desenvolvimento-de-sistemas",  "2023"),
-        ("fundamentos-de-logica-de-programacao",  "2023"),
+        ("ethics-in-systems-development",  "2023"),
+        ("programming-logic-fundamentals", "2023"),
     ]),
     ("pietro-m-oliveira", [
-        ("logica-de-programacao-em-linguagem-c",  "2023"),
+        ("programming-logic-in-c",         "2023"),
     ]),
     ("scrumstudy", [
-        ("scrum-fundamentals-certified",          "2024"),
+        ("scrum-fundamentals-certified",   "2024"),
     ]),
 ]
 
@@ -255,10 +255,10 @@ def build():
 
     # ---- resumo ----------------------------------------------------
     total = sum(len(i) for _, i in CERTS)
-    head = u"%d diretórios · %d certificados · " % (len(CERTS), total)
+    head = u"%d directories · %d certificates · " % (len(CERTS), total)
     srow = last_row + 2
     o.append(text(0, srow, head, T["dim"]))
-    o.append(text(len(head), srow, u"%d concluídos" % total, T["accent"]))
+    o.append(text(len(head), srow, u"%d completed" % total, T["accent"]))
 
     # ---- prompt final ----------------------------------------------
     prow = srow + 2
@@ -285,7 +285,7 @@ def build():
     front = ['<rect x=".5" y=".5" width="%.2f" height="%.2f" rx="9" fill="none" '
              'stroke="%s"/>' % (W - 1, h - 1, T["edge"])]
 
-    alt = "Terminal listando %d certificados agrupados por emissor" % total
+    alt = "Terminal listing %d certificates grouped by issuer" % total
     return (
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %.2f %.2f" '
         'width="%.2f" height="%.2f" role="img" aria-label="%s" '

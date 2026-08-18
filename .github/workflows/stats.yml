@@ -1,4 +1,4 @@
-name: Atualiza o card de estatísticas
+name: Update stats card
 
 # Regenera assets/stats-terminal.svg com os commits reais, incluindo os de
 # repositório privado.
@@ -30,7 +30,7 @@ jobs:
   stats:
     runs-on: ubuntu-latest
     steps:
-      - name: Verifica o secret
+      - name: Check the secret
         id: guard
         env:
           STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
@@ -50,21 +50,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Regenera o card
+      - name: Regenerate the card
         if: steps.guard.outputs.ok == 'true'
         env:
           GH_TOKEN: ${{ secrets.STATS_TOKEN }}
         run: python scripts/gen_stats_svg.py
 
-      - name: Commita se mudou
+      - name: Commit if changed
         if: steps.guard.outputs.ok == 'true'
         run: |
           if git diff --quiet -- assets/stats-terminal.svg; then
-            echo "sem mudança — nada a commitar"
+            echo "no change - nothing to commit"
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/stats-terminal.svg
-          git commit -m "Atualiza o card de estatísticas"
+          git commit -m "Update stats card"
           git push
