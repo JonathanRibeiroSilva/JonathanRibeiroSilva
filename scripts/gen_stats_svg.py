@@ -38,6 +38,9 @@ SINCE = "%d-01-01T00:00:00Z" % YEAR
 NAMEABLE_PRIVATE = {"JonathanRibeiroSilva/RunasERP"}
 TOP_N = 5
 
+# Repositorios que nao entram na contagem.
+EXCLUDE = {"mikufan3939/AEP"}
+
 # ---------------------------------------------------------------- paleta
 
 T = {
@@ -109,6 +112,8 @@ def collect():
 
     rows = []
     for r in repos:
+        if r["full_name"] in EXCLUDE:
+            continue
         n = count_commits(r["full_name"], r.get("default_branch") or "main")
         if n:
             rows.append({"full": r["full_name"], "private": r["private"],
