@@ -32,7 +32,7 @@
 ```
 
 Sou apaixonado por cibersegurança. Construo sistemas distribuídos de dia e estudo ataques de noite,
-e uma prática alimenta a outra. Estudo com laboratório próprio, não só com vídeo.
+e uma prática alimenta a outra.
 
 <details>
 <summary>🇬🇧 <b>English</b></summary>
