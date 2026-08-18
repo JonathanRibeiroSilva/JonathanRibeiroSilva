@@ -270,17 +270,3 @@ authorization in every service — reviewed with the same checklist I use on a p
 ┌──(jonathan㉿kali)-[~/certs]
 └─$ ▮
 ```
-
-<details>
-<summary>📋 <b>Tabela · plain table</b></summary>
-
-| Emissor | Trilha | Ano | Status |
-|:--|:--|:--|:--|
-| Cisco Academy | Gerenciamento de Ameaças Cibernéticas | 2025 | concluído |
-| Cisco Academy | Introdução a Cibersegurança | 2025 | concluído |
-| SCRUMstudy | Scrum Fundamentals Certified | 2024 | concluído |
-| Fundação Bradesco | Ética no Desenvolvimento de Sistemas | 2023 | concluído |
-| Prof. Pietro M. Oliveira | Lógica de Programação em Linguagem C | 2023 | concluído |
-| Fundação Bradesco | Fundamentos de Lógica de Programação | 2023 | concluído |
-
-</details>
