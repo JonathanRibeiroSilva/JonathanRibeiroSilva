@@ -38,11 +38,14 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: dist/snake.svg?color_snake=#00D4FF&color_dots=#0F1418,#0B3A1A,#126B2C,#22B843,#39FF5E
 
-      - name: Move para assets/ e commita se mudou
+      - name: Copia para assets/ e commita se mudou
         run: |
+          # cp, não mv: a action roda em Docker e cria dist/ como root, então
+          # o runner não tem permissão para remover o arquivo de origem.
+          test -f dist/snake.svg || { echo "::error::snk não gerou dist/snake.svg"; exit 1; }
           mkdir -p assets
-          mv dist/snake.svg assets/snake.svg
-          if git diff --quiet -- assets/snake.svg; then
+          cp dist/snake.svg assets/snake.svg
+          if git diff --quiet -- assets/snake.svg && git ls-files --error-unmatch assets/snake.svg >/dev/null 2>&1; then
             echo "sem mudança — nada a commitar"
             exit 0
           fi
