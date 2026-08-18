@@ -1,0 +1,53 @@
+name: Atualiza a cobrinha das contribuições
+
+# Gera assets/snake.svg — a cobra comendo o gráfico de contribuições.
+#
+# Cores da paleta do perfil, não o verde padrão do GitHub: a rampa vai do
+# quase-preto ao #39FF5E dos badges, e a cobra é o #00D4FF.
+#
+# Não precisa de secret. O Platane/snk lê o calendário PÚBLICO em
+# github.com/users/<user>/contributions — que só tem dados porque a opção
+# "Include private contributions on my profile" está ligada nas
+# configurações do perfil. Se ela for desligada, a cobrinha volta a comer
+# um gráfico quase vazio.
+
+on:
+  schedule:
+    - cron: "42 6 * * *"      # todo dia às 06:42 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/snake.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: false
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gera o SVG
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: dist/snake.svg?color_snake=#00D4FF&color_dots=#0F1418,#0B3A1A,#126B2C,#22B843,#39FF5E
+
+      - name: Move para assets/ e commita se mudou
+        run: |
+          mkdir -p assets
+          mv dist/snake.svg assets/snake.svg
+          if git diff --quiet -- assets/snake.svg; then
+            echo "sem mudança — nada a commitar"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/snake.svg
+          git commit -m "Atualiza a cobrinha das contribuições"
+          git push
