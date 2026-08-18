@@ -10,6 +10,8 @@
 
 <img width="509" alt="Terminal listando commits de 2026 por repositório, incluindo os privados" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/stats-terminal.svg"/>
 
+<img width="880" alt="Cobra percorrendo o gráfico de contribuições do último ano" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/snake.svg"/>
+
 </div>
 
 ---
