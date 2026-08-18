@@ -2,7 +2,7 @@
 
 <img alt="&gt;_ J4yz0n" src="https://capsule-render.vercel.app/api?type=rect&color=000000&fontColor=39FF5E&height=120&section=header&text=%3E_%20J4yz0n&fontSize=40&fontAlignY=55" width="100%"/>
 
-<img alt="Cyber Security Analyst • Fullstack Developer" src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=19&duration=3200&pause=900&color=39FF5E&background=000000&center=true&vCenter=true&width=1000&height=52&lines=Cyber+Security+Analyst;Fullstack+Developer"/>
+<img alt="Cyber Security Analyst • Fullstack Developer" src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=19&duration=3200&pause=900&color=39FF5E&background=000000&center=true&vCenter=true&width=1000&height=52&lines=Cyber+Security+Analyst-Fullstack+Developer"/>
 
 <a href="https://www.linkedin.com/in/jonathan-ribeiro-da-silva"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=00D4FF"/></a> <a href="https://tryhackme.com/p/J4yz0n"><img alt="TryHackMe" src="https://img.shields.io/badge/TryHackMe-000000?style=for-the-badge&logo=tryhackme&logoColor=39FF5E"/></a> <a href="mailto:jonathanribeirodasilva@outlook.com.br"><img alt="E-mail" src="https://img.shields.io/badge/E--mail-000000?style=for-the-badge&logo=maildotru&logoColor=FF2EC4"/></a>
 
