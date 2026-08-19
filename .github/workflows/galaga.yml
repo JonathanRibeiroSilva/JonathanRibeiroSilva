@@ -1,0 +1,62 @@
+name: Update contribution galaga
+
+# Gera assets/galaga.svg — a nave do Galaga varrendo o gráfico de
+# contribuições e explodindo cada dia com commit.
+#
+# Substituiu a cobrinha (Platane/snk). Como não existe action pronta de
+# Galaga, quem desenha é scripts/gen_galaga_svg.py — e por isso as cores
+# são as do perfil: rampa do quase-preto ao #39FF5E, tiro verde, nave
+# ciano com detalhe #FF2EC4.
+#
+# Não precisa de secret. O script lê o mesmo calendário PÚBLICO que a
+# cobrinha lia — github.com/users/<user>/contributions — que só tem dados
+# porque a opção "Include private contributions on my profile" está
+# ligada nas configurações do perfil. Se ela for desligada, a nave passa
+# a varrer um gráfico quase vazio.
+
+on:
+  schedule:
+    - cron: "42 6 * * *"      # todo dia às 06:42 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/galaga.yml"
+      - "scripts/gen_galaga_svg.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: galaga
+  cancel-in-progress: false
+
+jobs:
+  galaga:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate the SVG
+        env:
+          GALAGA_LOGIN: ${{ github.repository_owner }}
+        run: python scripts/gen_galaga_svg.py
+
+      - name: Commit if changed
+        run: |
+          # a segunda condição cobre o primeiro run: arquivo novo não
+          # aparece em `git diff`, e sem ela o commit seria pulado.
+          if git diff --quiet -- assets/galaga.svg \
+             && git ls-files --error-unmatch assets/galaga.svg >/dev/null 2>&1; then
+            echo "no change - nothing to commit"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/galaga.svg
+          git commit -m "Update contribution galaga"
+          git push

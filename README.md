@@ -10,7 +10,7 @@
 
 <img width="509" alt="Terminal listing 2026 commits per repository, private ones included" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/stats-terminal.svg"/>
 
-<img width="880" alt="Snake crossing the last year's contribution graph" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/snake.svg"/>
+<img width="880" alt="Galaga fighter sweeping the last year's contribution graph and shooting every day that has commits" src="https://raw.githubusercontent.com/JonathanRibeiroSilva/JonathanRibeiroSilva/main/assets/galaga.svg"/>
 
 </div>
 
@@ -165,20 +165,29 @@ else's server, and no telemetry.
 > so the two surfaces cannot drift apart. Roles live in a single capability matrix, read by the HTTP
 > guard, the WebSocket dispatcher and the client that draws the buttons.
 
-```mermaid
-%%{init:{'theme':'base','themeVariables':{'primaryColor':'#0D1117','primaryTextColor':'#E6E8EC','primaryBorderColor':'#39FF5E','lineColor':'#6E7581','secondaryColor':'#111820','tertiaryColor':'#111820','clusterBkg':'#0A0E13','clusterBorder':'#2A3138','fontFamily':'ui-monospace, monospace','fontSize':'13px'}}}%%
-flowchart LR
-  subgraph CLI["CLIENT — untrusted"]
-    M["movement<br/>walks through walls"]
-  end
-  subgraph SRV["SERVER — authoritative"]
-    RA["resolveAudience()"]
-  end
-  M -- "reported position" --> RA
-  RA --> CH["chat"]
-  RA --> AV["audio + video"]
-  style M fill:#2A0F20,stroke:#FF2EC4,color:#FF2EC4
-  style RA fill:#0F2417,stroke:#39FF5E,color:#39FF5E
+```text
+  client                    client                    client
+  patched build             browser                   browser
+      │                         │                         │
+      └─────────────────────────┴─────────────────────────┘
+                                │  reported position — lying is allowed here
+  ╔═════════════════════════════▼════════════════════════════════════════╗
+  ║ SERVER  —  authoritative                                             ║
+  ║                                                                      ║
+  ║   resolveAudience()   interest · zone occupancy · who hears whom,    ║
+  ║                       all computed server-side from the position     ║
+  ║                       the client reported                            ║
+  ║                                    │                                 ║
+  ║                    ┌───────────────┴───────────────┐                 ║
+  ║                    ▼                               ▼                 ║
+  ║                  chat                        audio + video           ║
+  ║                                                                      ║
+  ║   the SAME function — there is no distance check in the chat code,   ║
+  ║   so the two surfaces cannot drift apart                             ║
+  ╚══════════════════════════════════════════════════════════════════════╝
+     a tampered client walks through walls; what it cannot do is escape
+     the server — lying about where it stands never puts it inside a
+     private conversation
 ```
 
 <p>
@@ -215,14 +224,24 @@ database stays on the user's machine, nothing syncs to the cloud, and the DEK ne
 > trigger and view blocking).
 > Every finding became an **issue plus a regression test**.
 
-```mermaid
-%%{init:{'theme':'base','themeVariables':{'primaryColor':'#0D1117','primaryTextColor':'#E6E8EC','primaryBorderColor':'#39FF5E','lineColor':'#6E7581','secondaryColor':'#111820','tertiaryColor':'#111820','clusterBkg':'#0A0E13','clusterBorder':'#2A3138','fontFamily':'ui-monospace, monospace','fontSize':'13px'}}}%%
-flowchart LR
-  MK["master key<br/>typed in"] -- "PBKDF2 · 600k" --> KEK["KEK<br/>memory only"]
-  KEK -- "Fernet" --> DEK["DEK<br/>memory only"]
-  DEK --> DB["SQLite on the user's machine<br/>nothing syncs"]
-  style DEK fill:#0F2417,stroke:#39FF5E,color:#39FF5E
-  style DB fill:#0F2417,stroke:#39FF5E,color:#39FF5E
+```text
+  master key
+  typed by the user, never stored anywhere
+      │
+      │  PBKDF2-HMAC-SHA256  ·  600 000 iterations
+      │
+  ╔═══▼══════════════════════════════════════════════════════════════════╗
+  ║ PROCESS MEMORY  —  dies with the process                             ║
+  ║                                                                      ║
+  ║   KEK  ──── Fernet unwrap ────►  DEK                                 ║
+  ║   derived per session            never touches the disk              ║
+  ╚══════════════════════════════╤═══════════════════════════════════════╝
+                                 ┊  ciphertext only — the DEK stays above
+  ╔══════════════════════════════▼═══════════════════════════════════════╗
+  ║ vault.db (SQLite)  —  the user's machine  —  NOTHING SYNCS           ║
+  ║                                                                      ║
+  ║   no account, no server, no telemetry  ·  ships as a single .exe     ║
+  ╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 <p>
@@ -258,18 +277,39 @@ The attack surface came down to one gateway behind Cloudflare, secrets out of th
 role-based authorization in every service — and I reviewed the endpoints with the same checklist I
 use on a pentest.
 
-```mermaid
-%%{init:{'theme':'base','themeVariables':{'primaryColor':'#0D1117','primaryTextColor':'#E6E8EC','primaryBorderColor':'#39FF5E','lineColor':'#6E7581','secondaryColor':'#111820','tertiaryColor':'#111820','clusterBkg':'#0A0E13','clusterBorder':'#2A3138','fontFamily':'ui-monospace, monospace','fontSize':'13px'}}}%%
-flowchart LR
-  U["client"] --> CF["Cloudflare"]
-  CF --> GW["gateway<br/>token authentication"]
-  GW --> PED["orders"]
-  GW --> EST["inventory"]
-  GW --> PAG["payments"]
-  PED -- "events" --> Q[["RabbitMQ"]]
-  Q --> EST
-  Q --> PAG
-  style GW fill:#0F2417,stroke:#39FF5E,color:#39FF5E
+```text
+   browser            Mercado Pago      Google / Microsoft   GitHub Actions
+   admin + store      webhook           OAuth2 callback      CI runner
+       │                   │                    │                  │
+       └───────────────────┴──────────┬─────────┴──────────────────┘
+                                      │  HTTPS
+  ╔═══════════════════════════════════▼══════════════════════════════════╗
+  ║ CLOUDFLARE  —  DNS · TLS · WAF                                       ║
+  ║                                                                      ║
+  ║  runaserp.com.br + www    ──►  Pages · landing-page/                 ║
+  ║                                static, never touches the VPS         ║
+  ║                                                                      ║
+  ║  app.runaserp.com.br      ──┐                                        ║
+  ║  coolify.runaserp.com.br  ──┴►  Zero Trust · tunnel ingress          ║
+  ║                                 app     → frontend-prod:80           ║
+  ║                                 coolify → host.docker.internal:8000  ║
+  ╚══════════════════════════════╤═══════════════════════════════════════╝
+                                 ┊  QUIC — the connection is ALWAYS made
+                                 ┊  from the inside out; the edge never
+                                 ┊  dials the VPS
+  ╔══════════════════════════════▼═══════════════════════════════════════╗
+  ║ VPS  —  1 vCPU / 4 GB  —  NO INBOUND PORT OPEN                       ║
+  ║                                                                      ║
+  ║   ┌────────────────────────┐                                         ║
+  ║   │  erp-cloudflared-prod  │──── internal HTTP ───►  stack           ║
+  ║   │  token mode, distroless│──── host-gateway ────►  Coolify         ║
+  ║   └────────────────────────┘                           │             ║
+  ║                                docker compose up -d    │             ║
+  ║     runaserp stack · 14 containers  ◄──────────────────┘             ║
+  ║                                                                      ║
+  ║     nginx ─► gateway (token auth) ─► orders · inventory · payments   ║
+  ║     orders ──event──► RabbitMQ ──► inventory · payments              ║
+  ╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 <p>
